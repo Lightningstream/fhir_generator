@@ -1,0 +1,17 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+import '{FILE_NAME_CODING}.dart';
+
+//THIS FILE IS AUTO GENERATED! DO NOT EDIT! 
+
+part '{FILE_NAME}.freezed.dart';
+part '{FILE_NAME}.g.dart';
+
+@freezed
+class {RESOURCE_NAME} with _${RESOURCE_NAME} {
+  factory {RESOURCE_NAME}({
+    required {CODING_TYPE} coding,
+  }) = _{RESOURCE_NAME};
+
+  factory {RESOURCE_NAME}.fromJson(Map<String, dynamic> json) =>
+      _${RESOURCE_NAME}FromJson(json);
+}
