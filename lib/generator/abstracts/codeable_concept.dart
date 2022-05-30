@@ -5,18 +5,18 @@ part 'codeable_concept.g.dart';
 
 @freezed
 @JsonSerializable(genericArgumentFactories: true)
-class CodeableConcept<Code> with _$CodeableConcept<Code> {
+class CodeableConcept<T> with _$CodeableConcept<T> {
   const CodeableConcept._();
   const factory CodeableConcept({
-    required Code code,
-  }) = _CodeableConcept<Code>;
+    required T code,
+  }) = _CodeableConcept<T>;
 
   factory CodeableConcept.fromJson(
-      Map<String, dynamic> json, Code Function(Object? json) fromJsonT) {
-    return _$CodeableConceptFromJson<Code>(json, fromJsonT);
+      Map<String, dynamic> json, T Function(Object? json) fromJsonT) {
+    return _$CodeableConceptFromJson<T>(json, fromJsonT);
   }
 
   Map<String, dynamic> toJson() {
-    return _$CodeableConceptToJson<Code>(this, (value) => value);
+    return _$CodeableConceptToJson<T>(this, (value) => value);
   }
 }

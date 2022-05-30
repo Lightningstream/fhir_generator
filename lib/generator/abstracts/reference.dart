@@ -1,5 +1,5 @@
-import 'package:fhir_generator/generator/abstracts/codeable_concept.dart';
-import 'package:fhir_generator/generator/abstracts/identifier.dart';
+import 'identifier.dart';
+import 'codeable_concept.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'reference.freezed.dart';

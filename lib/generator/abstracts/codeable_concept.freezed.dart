@@ -18,8 +18,8 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$CodeableConceptTearOff {
   const _$CodeableConceptTearOff();
 
-  _CodeableConcept<Code> call<Code>({required Code code}) {
-    return _CodeableConcept<Code>(
+  _CodeableConcept<T> call<T>({required T code}) {
+    return _CodeableConcept<T>(
       code: code,
     );
   }
@@ -29,30 +29,30 @@ class _$CodeableConceptTearOff {
 const $CodeableConcept = _$CodeableConceptTearOff();
 
 /// @nodoc
-mixin _$CodeableConcept<Code> {
-  Code get code => throw _privateConstructorUsedError;
+mixin _$CodeableConcept<T> {
+  T get code => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $CodeableConceptCopyWith<Code, CodeableConcept<Code>> get copyWith =>
+  $CodeableConceptCopyWith<T, CodeableConcept<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $CodeableConceptCopyWith<Code, $Res> {
-  factory $CodeableConceptCopyWith(CodeableConcept<Code> value,
-          $Res Function(CodeableConcept<Code>) then) =
-      _$CodeableConceptCopyWithImpl<Code, $Res>;
-  $Res call({Code code});
+abstract class $CodeableConceptCopyWith<T, $Res> {
+  factory $CodeableConceptCopyWith(
+          CodeableConcept<T> value, $Res Function(CodeableConcept<T>) then) =
+      _$CodeableConceptCopyWithImpl<T, $Res>;
+  $Res call({T code});
 }
 
 /// @nodoc
-class _$CodeableConceptCopyWithImpl<Code, $Res>
-    implements $CodeableConceptCopyWith<Code, $Res> {
+class _$CodeableConceptCopyWithImpl<T, $Res>
+    implements $CodeableConceptCopyWith<T, $Res> {
   _$CodeableConceptCopyWithImpl(this._value, this._then);
 
-  final CodeableConcept<Code> _value;
+  final CodeableConcept<T> _value;
   // ignore: unused_field
-  final $Res Function(CodeableConcept<Code>) _then;
+  final $Res Function(CodeableConcept<T>) _then;
 
   @override
   $Res call({
@@ -62,63 +62,63 @@ class _$CodeableConceptCopyWithImpl<Code, $Res>
       code: code == freezed
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
-              as Code,
+              as T,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$CodeableConceptCopyWith<Code, $Res>
-    implements $CodeableConceptCopyWith<Code, $Res> {
-  factory _$CodeableConceptCopyWith(_CodeableConcept<Code> value,
-          $Res Function(_CodeableConcept<Code>) then) =
-      __$CodeableConceptCopyWithImpl<Code, $Res>;
+abstract class _$CodeableConceptCopyWith<T, $Res>
+    implements $CodeableConceptCopyWith<T, $Res> {
+  factory _$CodeableConceptCopyWith(
+          _CodeableConcept<T> value, $Res Function(_CodeableConcept<T>) then) =
+      __$CodeableConceptCopyWithImpl<T, $Res>;
   @override
-  $Res call({Code code});
+  $Res call({T code});
 }
 
 /// @nodoc
-class __$CodeableConceptCopyWithImpl<Code, $Res>
-    extends _$CodeableConceptCopyWithImpl<Code, $Res>
-    implements _$CodeableConceptCopyWith<Code, $Res> {
-  __$CodeableConceptCopyWithImpl(_CodeableConcept<Code> _value,
-      $Res Function(_CodeableConcept<Code>) _then)
-      : super(_value, (v) => _then(v as _CodeableConcept<Code>));
+class __$CodeableConceptCopyWithImpl<T, $Res>
+    extends _$CodeableConceptCopyWithImpl<T, $Res>
+    implements _$CodeableConceptCopyWith<T, $Res> {
+  __$CodeableConceptCopyWithImpl(
+      _CodeableConcept<T> _value, $Res Function(_CodeableConcept<T>) _then)
+      : super(_value, (v) => _then(v as _CodeableConcept<T>));
 
   @override
-  _CodeableConcept<Code> get _value => super._value as _CodeableConcept<Code>;
+  _CodeableConcept<T> get _value => super._value as _CodeableConcept<T>;
 
   @override
   $Res call({
     Object? code = freezed,
   }) {
-    return _then(_CodeableConcept<Code>(
+    return _then(_CodeableConcept<T>(
       code: code == freezed
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
-              as Code,
+              as T,
     ));
   }
 }
 
 /// @nodoc
 
-class _$_CodeableConcept<Code> extends _CodeableConcept<Code> {
+class _$_CodeableConcept<T> extends _CodeableConcept<T> {
   const _$_CodeableConcept({required this.code}) : super._();
 
   @override
-  final Code code;
+  final T code;
 
   @override
   String toString() {
-    return 'CodeableConcept<$Code>(code: $code)';
+    return 'CodeableConcept<$T>(code: $code)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _CodeableConcept<Code> &&
+            other is _CodeableConcept<T> &&
             const DeepCollectionEquality().equals(other.code, code));
   }
 
@@ -128,20 +128,18 @@ class _$_CodeableConcept<Code> extends _CodeableConcept<Code> {
 
   @JsonKey(ignore: true)
   @override
-  _$CodeableConceptCopyWith<Code, _CodeableConcept<Code>> get copyWith =>
-      __$CodeableConceptCopyWithImpl<Code, _CodeableConcept<Code>>(
-          this, _$identity);
+  _$CodeableConceptCopyWith<T, _CodeableConcept<T>> get copyWith =>
+      __$CodeableConceptCopyWithImpl<T, _CodeableConcept<T>>(this, _$identity);
 }
 
-abstract class _CodeableConcept<Code> extends CodeableConcept<Code> {
-  const factory _CodeableConcept({required Code code}) =
-      _$_CodeableConcept<Code>;
+abstract class _CodeableConcept<T> extends CodeableConcept<T> {
+  const factory _CodeableConcept({required T code}) = _$_CodeableConcept<T>;
   const _CodeableConcept._() : super._();
 
   @override
-  Code get code;
+  T get code;
   @override
   @JsonKey(ignore: true)
-  _$CodeableConceptCopyWith<Code, _CodeableConcept<Code>> get copyWith =>
+  _$CodeableConceptCopyWith<T, _CodeableConcept<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

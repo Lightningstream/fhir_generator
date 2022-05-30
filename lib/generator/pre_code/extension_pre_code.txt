@@ -1,0 +1,18 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:fhir_generator/build/base_classes/base_classes.dart';
+import 'package:fhir_generator/build/code_systems/code_systems.dart';
+
+//THIS FILE IS AUTO GENERATED! DO NOT EDIT! 
+
+part '{FILE_NAME}.freezed.dart';
+part '{FILE_NAME}.g.dart';
+
+@freezed
+class {RESOURCE_NAME} with _${RESOURCE_NAME} {
+  factory {RESOURCE_NAME}({
+    {RESOURCE_CONSTRUCTOR}
+  }) = _{RESOURCE_NAME};
+
+  factory {RESOURCE_NAME}.fromJson(Map<String, dynamic> json) =>
+      _${RESOURCE_NAME}FromJson(json);
+}

@@ -13,8 +13,8 @@ abstract class Generator {
 
   Generator(dynamic definitionObject, this.baseDirectory) {
     artifact = definitionObject;
-    baseFileName =
-        artifact['name'].toString().replaceAll(getFromReplacement(), "");
+    baseFileName = camelCaseToUnderscore(
+        artifact['name'].toString().replaceAll(getFromReplacement(), ""));
     resourceName = artifact['name']
         .toString()
         .replaceAll(getFromReplacement(), getReplacementNameSpace());
@@ -22,11 +22,12 @@ abstract class Generator {
   }
 
   @nonVirtual
-  void generateFile() {
+  String generateFile() {
     File file = File("$baseDirectory/$baseFileName/$fileName.dart");
     file.createSync(recursive: true);
     String fileContent = getFileContent();
     file.writeAsStringSync(fileContent, flush: true);
+    return "/$baseFileName/$fileName.dart";
   }
 
   String getFileContent();

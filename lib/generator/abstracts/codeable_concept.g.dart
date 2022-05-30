@@ -6,18 +6,18 @@ part of 'codeable_concept.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-CodeableConcept<Code> _$CodeableConceptFromJson<Code>(
+CodeableConcept<T> _$CodeableConceptFromJson<T>(
   Map<String, dynamic> json,
-  Code Function(Object? json) fromJsonCode,
+  T Function(Object? json) fromJsonT,
 ) =>
-    CodeableConcept<Code>(
-      code: fromJsonCode(json['code']),
+    CodeableConcept<T>(
+      code: fromJsonT(json['code']),
     );
 
-Map<String, dynamic> _$CodeableConceptToJson<Code>(
-  CodeableConcept<Code> instance,
-  Object? Function(Code value) toJsonCode,
+Map<String, dynamic> _$CodeableConceptToJson<T>(
+  CodeableConcept<T> instance,
+  Object? Function(T value) toJsonT,
 ) =>
     <String, dynamic>{
-      'code': toJsonCode(instance.code),
+      'code': toJsonT(instance.code),
     };
