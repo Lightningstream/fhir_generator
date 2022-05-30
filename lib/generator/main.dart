@@ -53,11 +53,16 @@ main() async {
 
   dir = Directory('../json/extensions/');
 
+  importFile = File(buildPath + "/extensions/extensions.dart");
+  exportString = "";
+  importFile.createSync(recursive: true);
   entities = await dir.list().toList();
   entities.forEach((element) async {
     String fileContent = File(element.path).readAsStringSync();
     dynamic object = jsonDecode(fileContent);
     String fileName =
         ExtensionGenerator(object, buildPath + "/extensions").generateFile();
+    exportString += "export '.$fileName'; \n";
   });
+  importFile.writeAsStringSync(exportString);
 }
