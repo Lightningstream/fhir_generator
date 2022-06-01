@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'codeable_concept.dart';
+import '../base_classes.dart';
 part 'identifier.freezed.dart';
 part 'identifier.g.dart';
 

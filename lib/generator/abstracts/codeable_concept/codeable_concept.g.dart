@@ -11,7 +11,7 @@ CodeableConcept<T> _$CodeableConceptFromJson<T>(
   T Function(Object? json) fromJsonT,
 ) =>
     CodeableConcept<T>(
-      code: fromJsonT(json['code']),
+      coding: (json['coding'] as List<dynamic>).map(fromJsonT).toList(),
     );
 
 Map<String, dynamic> _$CodeableConceptToJson<T>(
@@ -19,5 +19,5 @@ Map<String, dynamic> _$CodeableConceptToJson<T>(
   Object? Function(T value) toJsonT,
 ) =>
     <String, dynamic>{
-      'code': toJsonT(instance.code),
+      'coding': instance.coding.map(toJsonT).toList(),
     };

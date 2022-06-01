@@ -1,4 +1,4 @@
-import 'package:fhir_generator/generator/abstracts/frequency.dart';
+import '../base_classes.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'timing.freezed.dart';

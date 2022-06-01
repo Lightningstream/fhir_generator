@@ -25,19 +25,25 @@ class _$DifferentialElementTearOff {
   _DifferentialElement call(
       {required String id,
       required String path,
+      dynamic? slicing,
       String? max,
       int? min,
       String? fixedUri,
       List<DifferentialElementType>? type,
-      dynamic? binding}) {
+      dynamic? binding,
+      dynamic? base,
+      dynamic? constraint}) {
     return _DifferentialElement(
       id: id,
       path: path,
+      slicing: slicing,
       max: max,
       min: min,
       fixedUri: fixedUri,
       type: type,
       binding: binding,
+      base: base,
+      constraint: constraint,
     );
   }
 
@@ -53,11 +59,14 @@ const $DifferentialElement = _$DifferentialElementTearOff();
 mixin _$DifferentialElement {
   String get id => throw _privateConstructorUsedError;
   String get path => throw _privateConstructorUsedError;
+  dynamic? get slicing => throw _privateConstructorUsedError;
   String? get max => throw _privateConstructorUsedError;
   int? get min => throw _privateConstructorUsedError;
   String? get fixedUri => throw _privateConstructorUsedError;
   List<DifferentialElementType>? get type => throw _privateConstructorUsedError;
   dynamic? get binding => throw _privateConstructorUsedError;
+  dynamic? get base => throw _privateConstructorUsedError;
+  dynamic? get constraint => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -73,11 +82,14 @@ abstract class $DifferentialElementCopyWith<$Res> {
   $Res call(
       {String id,
       String path,
+      dynamic? slicing,
       String? max,
       int? min,
       String? fixedUri,
       List<DifferentialElementType>? type,
-      dynamic? binding});
+      dynamic? binding,
+      dynamic? base,
+      dynamic? constraint});
 }
 
 /// @nodoc
@@ -93,11 +105,14 @@ class _$DifferentialElementCopyWithImpl<$Res>
   $Res call({
     Object? id = freezed,
     Object? path = freezed,
+    Object? slicing = freezed,
     Object? max = freezed,
     Object? min = freezed,
     Object? fixedUri = freezed,
     Object? type = freezed,
     Object? binding = freezed,
+    Object? base = freezed,
+    Object? constraint = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
@@ -108,6 +123,10 @@ class _$DifferentialElementCopyWithImpl<$Res>
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
+      slicing: slicing == freezed
+          ? _value.slicing
+          : slicing // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
       max: max == freezed
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
@@ -128,6 +147,14 @@ class _$DifferentialElementCopyWithImpl<$Res>
           ? _value.binding
           : binding // ignore: cast_nullable_to_non_nullable
               as dynamic?,
+      base: base == freezed
+          ? _value.base
+          : base // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      constraint: constraint == freezed
+          ? _value.constraint
+          : constraint // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
     ));
   }
 }
@@ -142,11 +169,14 @@ abstract class _$DifferentialElementCopyWith<$Res>
   $Res call(
       {String id,
       String path,
+      dynamic? slicing,
       String? max,
       int? min,
       String? fixedUri,
       List<DifferentialElementType>? type,
-      dynamic? binding});
+      dynamic? binding,
+      dynamic? base,
+      dynamic? constraint});
 }
 
 /// @nodoc
@@ -164,11 +194,14 @@ class __$DifferentialElementCopyWithImpl<$Res>
   $Res call({
     Object? id = freezed,
     Object? path = freezed,
+    Object? slicing = freezed,
     Object? max = freezed,
     Object? min = freezed,
     Object? fixedUri = freezed,
     Object? type = freezed,
     Object? binding = freezed,
+    Object? base = freezed,
+    Object? constraint = freezed,
   }) {
     return _then(_DifferentialElement(
       id: id == freezed
@@ -179,6 +212,10 @@ class __$DifferentialElementCopyWithImpl<$Res>
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
+      slicing: slicing == freezed
+          ? _value.slicing
+          : slicing // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
       max: max == freezed
           ? _value.max
           : max // ignore: cast_nullable_to_non_nullable
@@ -199,21 +236,33 @@ class __$DifferentialElementCopyWithImpl<$Res>
           ? _value.binding
           : binding // ignore: cast_nullable_to_non_nullable
               as dynamic?,
+      base: base == freezed
+          ? _value.base
+          : base // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      constraint: constraint == freezed
+          ? _value.constraint
+          : constraint // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_DifferentialElement implements _DifferentialElement {
+class _$_DifferentialElement extends _DifferentialElement {
   _$_DifferentialElement(
       {required this.id,
       required this.path,
+      this.slicing,
       this.max,
       this.min,
       this.fixedUri,
       this.type,
-      this.binding});
+      this.binding,
+      this.base,
+      this.constraint})
+      : super._();
 
   factory _$_DifferentialElement.fromJson(Map<String, dynamic> json) =>
       _$$_DifferentialElementFromJson(json);
@@ -222,6 +271,8 @@ class _$_DifferentialElement implements _DifferentialElement {
   final String id;
   @override
   final String path;
+  @override
+  final dynamic? slicing;
   @override
   final String? max;
   @override
@@ -232,10 +283,14 @@ class _$_DifferentialElement implements _DifferentialElement {
   final List<DifferentialElementType>? type;
   @override
   final dynamic? binding;
+  @override
+  final dynamic? base;
+  @override
+  final dynamic? constraint;
 
   @override
   String toString() {
-    return 'DifferentialElement(id: $id, path: $path, max: $max, min: $min, fixedUri: $fixedUri, type: $type, binding: $binding)';
+    return 'DifferentialElement(id: $id, path: $path, slicing: $slicing, max: $max, min: $min, fixedUri: $fixedUri, type: $type, binding: $binding, base: $base, constraint: $constraint)';
   }
 
   @override
@@ -245,11 +300,15 @@ class _$_DifferentialElement implements _DifferentialElement {
             other is _DifferentialElement &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.path, path) &&
+            const DeepCollectionEquality().equals(other.slicing, slicing) &&
             const DeepCollectionEquality().equals(other.max, max) &&
             const DeepCollectionEquality().equals(other.min, min) &&
             const DeepCollectionEquality().equals(other.fixedUri, fixedUri) &&
             const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality().equals(other.binding, binding));
+            const DeepCollectionEquality().equals(other.binding, binding) &&
+            const DeepCollectionEquality().equals(other.base, base) &&
+            const DeepCollectionEquality()
+                .equals(other.constraint, constraint));
   }
 
   @override
@@ -257,11 +316,14 @@ class _$_DifferentialElement implements _DifferentialElement {
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(path),
+      const DeepCollectionEquality().hash(slicing),
       const DeepCollectionEquality().hash(max),
       const DeepCollectionEquality().hash(min),
       const DeepCollectionEquality().hash(fixedUri),
       const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(binding));
+      const DeepCollectionEquality().hash(binding),
+      const DeepCollectionEquality().hash(base),
+      const DeepCollectionEquality().hash(constraint));
 
   @JsonKey(ignore: true)
   @override
@@ -275,15 +337,19 @@ class _$_DifferentialElement implements _DifferentialElement {
   }
 }
 
-abstract class _DifferentialElement implements DifferentialElement {
+abstract class _DifferentialElement extends DifferentialElement {
   factory _DifferentialElement(
       {required String id,
       required String path,
+      dynamic? slicing,
       String? max,
       int? min,
       String? fixedUri,
       List<DifferentialElementType>? type,
-      dynamic? binding}) = _$_DifferentialElement;
+      dynamic? binding,
+      dynamic? base,
+      dynamic? constraint}) = _$_DifferentialElement;
+  _DifferentialElement._() : super._();
 
   factory _DifferentialElement.fromJson(Map<String, dynamic> json) =
       _$_DifferentialElement.fromJson;
@@ -292,6 +358,8 @@ abstract class _DifferentialElement implements DifferentialElement {
   String get id;
   @override
   String get path;
+  @override
+  dynamic? get slicing;
   @override
   String? get max;
   @override
@@ -302,6 +370,10 @@ abstract class _DifferentialElement implements DifferentialElement {
   List<DifferentialElementType>? get type;
   @override
   dynamic? get binding;
+  @override
+  dynamic? get base;
+  @override
+  dynamic? get constraint;
   @override
   @JsonKey(ignore: true)
   _$DifferentialElementCopyWith<_DifferentialElement> get copyWith =>

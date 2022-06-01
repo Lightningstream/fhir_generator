@@ -10,6 +10,7 @@ abstract class Generator {
   late final String fileName;
   late final String baseFileName;
   final String baseDirectory;
+  String generatorFileName = "";
 
   Generator(dynamic definitionObject, this.baseDirectory) {
     artifact = definitionObject;

@@ -8,7 +8,7 @@ part 'codeable_concept.g.dart';
 class CodeableConcept<T> with _$CodeableConcept<T> {
   const CodeableConcept._();
   const factory CodeableConcept({
-    required T code,
+    required List<T> coding,
   }) = _CodeableConcept<T>;
 
   factory CodeableConcept.fromJson(

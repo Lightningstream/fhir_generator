@@ -18,9 +18,9 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$CodeableConceptTearOff {
   const _$CodeableConceptTearOff();
 
-  _CodeableConcept<T> call<T>({required T code}) {
+  _CodeableConcept<T> call<T>({required List<T> coding}) {
     return _CodeableConcept<T>(
-      code: code,
+      coding: coding,
     );
   }
 }
@@ -30,7 +30,7 @@ const $CodeableConcept = _$CodeableConceptTearOff();
 
 /// @nodoc
 mixin _$CodeableConcept<T> {
-  T get code => throw _privateConstructorUsedError;
+  List<T> get coding => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CodeableConceptCopyWith<T, CodeableConcept<T>> get copyWith =>
@@ -42,7 +42,7 @@ abstract class $CodeableConceptCopyWith<T, $Res> {
   factory $CodeableConceptCopyWith(
           CodeableConcept<T> value, $Res Function(CodeableConcept<T>) then) =
       _$CodeableConceptCopyWithImpl<T, $Res>;
-  $Res call({T code});
+  $Res call({List<T> coding});
 }
 
 /// @nodoc
@@ -56,13 +56,13 @@ class _$CodeableConceptCopyWithImpl<T, $Res>
 
   @override
   $Res call({
-    Object? code = freezed,
+    Object? coding = freezed,
   }) {
     return _then(_value.copyWith(
-      code: code == freezed
-          ? _value.code
-          : code // ignore: cast_nullable_to_non_nullable
-              as T,
+      coding: coding == freezed
+          ? _value.coding
+          : coding // ignore: cast_nullable_to_non_nullable
+              as List<T>,
     ));
   }
 }
@@ -74,7 +74,7 @@ abstract class _$CodeableConceptCopyWith<T, $Res>
           _CodeableConcept<T> value, $Res Function(_CodeableConcept<T>) then) =
       __$CodeableConceptCopyWithImpl<T, $Res>;
   @override
-  $Res call({T code});
+  $Res call({List<T> coding});
 }
 
 /// @nodoc
@@ -90,13 +90,13 @@ class __$CodeableConceptCopyWithImpl<T, $Res>
 
   @override
   $Res call({
-    Object? code = freezed,
+    Object? coding = freezed,
   }) {
     return _then(_CodeableConcept<T>(
-      code: code == freezed
-          ? _value.code
-          : code // ignore: cast_nullable_to_non_nullable
-              as T,
+      coding: coding == freezed
+          ? _value.coding
+          : coding // ignore: cast_nullable_to_non_nullable
+              as List<T>,
     ));
   }
 }
@@ -104,14 +104,14 @@ class __$CodeableConceptCopyWithImpl<T, $Res>
 /// @nodoc
 
 class _$_CodeableConcept<T> extends _CodeableConcept<T> {
-  const _$_CodeableConcept({required this.code}) : super._();
+  const _$_CodeableConcept({required this.coding}) : super._();
 
   @override
-  final T code;
+  final List<T> coding;
 
   @override
   String toString() {
-    return 'CodeableConcept<$T>(code: $code)';
+    return 'CodeableConcept<$T>(coding: $coding)';
   }
 
   @override
@@ -119,12 +119,12 @@ class _$_CodeableConcept<T> extends _CodeableConcept<T> {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _CodeableConcept<T> &&
-            const DeepCollectionEquality().equals(other.code, code));
+            const DeepCollectionEquality().equals(other.coding, coding));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(code));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(coding));
 
   @JsonKey(ignore: true)
   @override
@@ -133,11 +133,12 @@ class _$_CodeableConcept<T> extends _CodeableConcept<T> {
 }
 
 abstract class _CodeableConcept<T> extends CodeableConcept<T> {
-  const factory _CodeableConcept({required T code}) = _$_CodeableConcept<T>;
+  const factory _CodeableConcept({required List<T> coding}) =
+      _$_CodeableConcept<T>;
   const _CodeableConcept._() : super._();
 
   @override
-  T get code;
+  List<T> get coding;
   @override
   @JsonKey(ignore: true)
   _$CodeableConceptCopyWith<T, _CodeableConcept<T>> get copyWith =>
