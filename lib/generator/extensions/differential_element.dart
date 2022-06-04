@@ -69,38 +69,12 @@ class DifferentialElement with _$DifferentialElement {
           return "Reference<Identifier<CodeableConcept<OpenIMISIdentifierCoding>>>";
         case "Identifier":
           return "Identifier<CodeableConcept<OpenIMISIdentifierCoding>>";
-        case "decimal":
-          return "double";
-        case "dateTime":
-          return "String";
-        case "instant":
-          return "String";
-        case "boolean":
-          return "bool";
-        case "url":
-          return "String";
-        case "uri":
-          return "String";
-        case "positiveInt":
-          return "int";
-        case "base64Binary":
-          return "String";
-        case "markdown":
-          return "String";
-        case "code":
-          return "String";
-        case "string":
-          return "String";
         case "http://hl7.org/fhirpath/System.String":
           return "String";
-        case "unsignedInt":
-          return "int";
-        case "date":
-          return "String";
-        case "HumanName":
-          return "HumanName";
         default:
-          return type![0].code;
+          return type![0]
+              .code
+              .replaceRange(0, 1, type![0].code[0].toUpperCase());
       }
     }
     return "dynamic";

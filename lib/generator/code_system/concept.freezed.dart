@@ -22,7 +22,7 @@ Concept _$ConceptFromJson(Map<String, dynamic> json) {
 class _$ConceptTearOff {
   const _$ConceptTearOff();
 
-  _Concept call({required String code, required String display}) {
+  _Concept call({required String code, String? display}) {
     return _Concept(
       code: code,
       display: display,
@@ -40,7 +40,7 @@ const $Concept = _$ConceptTearOff();
 /// @nodoc
 mixin _$Concept {
   String get code => throw _privateConstructorUsedError;
-  String get display => throw _privateConstructorUsedError;
+  String? get display => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -51,7 +51,7 @@ mixin _$Concept {
 abstract class $ConceptCopyWith<$Res> {
   factory $ConceptCopyWith(Concept value, $Res Function(Concept) then) =
       _$ConceptCopyWithImpl<$Res>;
-  $Res call({String code, String display});
+  $Res call({String code, String? display});
 }
 
 /// @nodoc
@@ -75,7 +75,7 @@ class _$ConceptCopyWithImpl<$Res> implements $ConceptCopyWith<$Res> {
       display: display == freezed
           ? _value.display
           : display // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -85,7 +85,7 @@ abstract class _$ConceptCopyWith<$Res> implements $ConceptCopyWith<$Res> {
   factory _$ConceptCopyWith(_Concept value, $Res Function(_Concept) then) =
       __$ConceptCopyWithImpl<$Res>;
   @override
-  $Res call({String code, String display});
+  $Res call({String code, String? display});
 }
 
 /// @nodoc
@@ -110,7 +110,7 @@ class __$ConceptCopyWithImpl<$Res> extends _$ConceptCopyWithImpl<$Res>
       display: display == freezed
           ? _value.display
           : display // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -118,7 +118,7 @@ class __$ConceptCopyWithImpl<$Res> extends _$ConceptCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_Concept implements _Concept {
-  _$_Concept({required this.code, required this.display});
+  _$_Concept({required this.code, this.display});
 
   factory _$_Concept.fromJson(Map<String, dynamic> json) =>
       _$$_ConceptFromJson(json);
@@ -126,7 +126,7 @@ class _$_Concept implements _Concept {
   @override
   final String code;
   @override
-  final String display;
+  final String? display;
 
   @override
   String toString() {
@@ -160,15 +160,14 @@ class _$_Concept implements _Concept {
 }
 
 abstract class _Concept implements Concept {
-  factory _Concept({required String code, required String display}) =
-      _$_Concept;
+  factory _Concept({required String code, String? display}) = _$_Concept;
 
   factory _Concept.fromJson(Map<String, dynamic> json) = _$_Concept.fromJson;
 
   @override
   String get code;
   @override
-  String get display;
+  String? get display;
   @override
   @JsonKey(ignore: true)
   _$ConceptCopyWith<_Concept> get copyWith =>

@@ -11,3 +11,6 @@ export 'resource/resource.dart';
 export 'narrative/narrative.dart';
 export 'coding/coding.dart';
 export 'period/period.dart';
+export 'primitive_types/primitive_types.dart';
+export 'element/element.dart';
+export 'element/backbone_element.dart';

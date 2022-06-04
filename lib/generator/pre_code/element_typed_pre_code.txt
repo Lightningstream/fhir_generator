@@ -1,0 +1,28 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:fhir_generator/build/base_classes/base_classes.dart';
+import 'package:fhir_generator/build/code_systems/code_systems.dart';
+import 'package:fhir_generator/build/base_types/base_types.dart';
+
+//THIS FILE IS AUTO GENERATED! DO NOT EDIT! 
+
+part '{FILE_NAME}.freezed.dart';
+part '{FILE_NAME}.g.dart';
+
+@freezed
+@JsonSerializable(genericArgumentFactories: true)
+class {RESOURCE_NAME}<T{TYPE_PARAMETER_EXTENSION}> with _${RESOURCE_NAME}<T> {
+  const {RESOURCE_NAME}._();
+  const factory {RESOURCE_NAME}(
+    String? id,
+    List<Extension>? extension,
+    {RESOURCE_CONSTRUCTOR}) = _{RESOURCE_NAME}<T>;
+
+  factory {RESOURCE_NAME}.fromJson(
+      Map<String, dynamic> json, T Function(Object? json) fromJsonT) {
+    return _${RESOURCE_NAME}FromJson<T>(json, fromJsonT);
+  }
+
+  Map<String, dynamic> toJson() {
+    return _${RESOURCE_NAME}ToJson<T>(this, (value) => value);
+  }
+}

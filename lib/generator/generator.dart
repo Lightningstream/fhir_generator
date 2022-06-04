@@ -16,9 +16,9 @@ abstract class Generator {
     artifact = definitionObject;
     baseFileName = camelCaseToUnderscore(
         artifact['name'].toString().replaceAll(getFromReplacement(), ""));
-    resourceName = artifact['name']
-        .toString()
-        .replaceAll(getFromReplacement(), getReplacementNameSpace());
+    resourceName =
+        artifact['name'].toString().replaceAll(getFromReplacement(), "") +
+            getReplacementNameSpace();
     fileName = camelCaseToUnderscore(resourceName);
   }
 

@@ -7,7 +7,7 @@ part 'concept.g.dart';
 class Concept with _$Concept {
   factory Concept({
     required String code,
-    required String display,
+    String? display,
   }) = _Concept;
 
   factory Concept.fromJson(Map<String, dynamic> json) =>

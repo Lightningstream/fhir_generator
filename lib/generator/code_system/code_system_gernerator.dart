@@ -21,10 +21,15 @@ class CodeSystemGenerator extends Generator {
     String content = "";
     for (Concept element in concepts) {
       String jsonValue = element.code;
-      String codeWithUnderscores = element.code.replaceAll("-", "_");
+      String codeWithUnderscores = element.code
+          .replaceAll("-", "_")
+          .replaceAll("<", "smaller_")
+          .replaceAll("=", "equal_")
+          .replaceAll(">", "greater_");
       String codeWithMinus = element.code.replaceAll("-", "negative_");
-      String enumValue =
-          isNumeric(jsonValue) ? "value_$codeWithMinus" : codeWithUnderscores;
+      String enumValue = isNumeric(jsonValue)
+          ? "value_$codeWithMinus"
+          : "value_$codeWithUnderscores";
       enumValue = enumValue.toLowerCase();
       content += '\n\t@JsonValue("$jsonValue")\n\t$enumValue,';
     }
