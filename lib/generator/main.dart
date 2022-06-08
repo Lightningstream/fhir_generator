@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:fhir_generator/generator/abstracts/base_classes.dart';
 import 'package:fhir_generator/generator/base_types/base_type_generator.dart';
 
 import 'package:path/path.dart' as p;
@@ -12,7 +11,7 @@ import 'package:fhir_generator/generator/extensions/extension_generator.dart';
 
 main() async {
   //copy base_classes
-  Directory dir = Directory('./abstracts/');
+  Directory dir = Directory('./base_classes/');
   List<FileSystemEntity> entities = await dir.list().toList();
   // var process = await Process.start(Platform.executable, [p.join('ls', '')],
   //     // This creates a new shell!
@@ -43,7 +42,8 @@ main() async {
     dynamic content = object["compose"]["include"][0];
     if (content["concept"] != null) {
       // There is a cross reference to a base code system.
-      content["name"] = (object["name"].toString().replaceAll("VS", "")) + "CS";
+      content["name"] = (object["id"].toString().replaceAll("VS", "")) + "CS";
+      content["id"] = (object["id"].toString().replaceAll("VS", "")) + "CS";
       String fileName =
           CodeSystemGenerator(content, buildPath + "/code_systems")
               .generateFile();
@@ -55,35 +55,35 @@ main() async {
   });
   importFile.writeAsStringSync(exportString);
 
-  // dir = Directory('../json/extensions/');
+  dir = Directory('../json/extensions/');
 
-  // importFile = File(buildPath + "/extensions/extensions.dart");
-  // exportString = "";
-  // importFile.createSync(recursive: true);
-  // entities = await dir.list().toList();
-  // entities.forEach((element) async {
-  //   String fileContent = File(element.path).readAsStringSync();
-  //   dynamic object = jsonDecode(fileContent);
-  //   String fileName =
-  //       ExtensionGenerator(object, buildPath + "/extensions").generateFile();
-  //   exportString += "export '.$fileName'; \n";
-  // });
-  // importFile.writeAsStringSync(exportString);
+  importFile = File(buildPath + "/extensions/extensions.dart");
+  exportString = "";
+  importFile.createSync(recursive: true);
+  entities = await dir.list().toList();
+  entities.forEach((element) async {
+    String fileContent = File(element.path).readAsStringSync();
+    dynamic object = jsonDecode(fileContent);
+    String fileName =
+        ExtensionGenerator(object, buildPath + "/extensions").generateFile();
+    exportString += "export '.$fileName'; \n";
+  });
+  importFile.writeAsStringSync(exportString);
 
-  // dir = Directory('../json/resources/');
+  dir = Directory('../json/resources/');
 
-  // importFile = File(buildPath + "/resources/resources.dart");
-  // exportString = "";
-  // importFile.createSync(recursive: true);
-  // entities = await dir.list().toList();
-  // entities.forEach((element) async {
-  //   String fileContent = File(element.path).readAsStringSync();
-  //   dynamic object = jsonDecode(fileContent);
-  //   String fileName = await ResourceGenerator(object, buildPath + "/resources")
-  //       .generateFile();
-  //   exportString += "export '.$fileName'; \n";
-  // });
-  // importFile.writeAsStringSync(exportString);
+  importFile = File(buildPath + "/resources/resources.dart");
+  exportString = "";
+  importFile.createSync(recursive: true);
+  entities = await dir.list().toList();
+  entities.forEach((element) async {
+    String fileContent = File(element.path).readAsStringSync();
+    dynamic object = jsonDecode(fileContent);
+    String fileName = await ResourceGenerator(object, buildPath + "/resources")
+        .generateFile();
+    exportString += "export '.$fileName'; \n";
+  });
+  importFile.writeAsStringSync(exportString);
   dir = Directory('../json/base_types/');
   importFile = File(buildPath + "/base_types/base_types.dart");
   exportString = "";

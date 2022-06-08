@@ -49,41 +49,41 @@ class ResourceGenerator extends Generator {
             "_";
       }
       mappedElements[element.memberName] = mappedElement;
-      if (!typeExists(element)) {
-        Map map = Map.from({});
-        List list = List.from([]);
-        print("Generate sub file for " +
-            element.memberType +
-            " in " +
-            element.memberName);
-        for (int j = i + 1;
-            j < elements.length &&
-                elements[j].toString().contains(element.memberName);
-            j++) {
-          if (elements[j].id.contains(":")) continue;
-          var split = elements[j].id.split(".");
-          if (split.length < 3) continue;
-          print(elements[j].id);
-          var newElement = elements[j].copyWith(id: split[1] + "." + split[2]);
-          list.add(newElement);
-        }
+      // if (!typeExists(element)) {
+      //   Map map = Map.from({});
+      //   List list = List.from([]);
+      //   print("Generate sub file for " +
+      //       element.memberType +
+      //       " in " +
+      //       element.memberName);
+      //   for (int j = i + 1;
+      //       j < elements.length &&
+      //           elements[j].toString().contains(element.memberName);
+      //       j++) {
+      //     if (elements[j].id.contains(":")) continue;
+      //     var split = elements[j].id.split(".");
+      //     if (split.length < 3) continue;
+      //     print(elements[j].id);
+      //     var newElement = elements[j].copyWith(id: split[1] + "." + split[2]);
+      //     list.add(newElement);
+      //   }
 
-        if (list.length > 0) {
-          map["snapshot"] = {};
-          map["snapshot"]["element"] = list;
-          map["name"] = element.memberType;
+      //   if (list.length > 0) {
+      //     map["snapshot"] = {};
+      //     map["snapshot"]["element"] = list;
+      //     map["name"] = element.memberType;
 
-          String t = ResourceGenerator(
-                  jsonDecode(jsonEncode(map)), "../build/base_classes/")
-              .generateFile();
-          print(t);
+      //     String t = ResourceGenerator(
+      //             jsonDecode(jsonEncode(map)), "../build/base_classes/")
+      //         .generateFile();
+      //     print(t);
 
-          File("../build/base_classes/base_classes.dart")
-              .writeAsStringSync("export '.$t'; \n", mode: FileMode.append);
-        } else {
-          print("Could not create sub element!");
-        }
-      }
+      //     File("../build/base_classes/base_classes.dart")
+      //         .writeAsStringSync("export '.$t'; \n", mode: FileMode.append);
+      //   } else {
+      //     print("Could not create sub element!");
+      //   }
+      // }
     }
     return mappedElements;
   }
@@ -108,7 +108,7 @@ class ResourceGenerator extends Generator {
   }
 
   bool shouldSkipElement(DifferentialElement element) {
-    return element.min == "0" ||
+    return element.max == "0" ||
         element.memberName.contains(":") ||
         mappedElements[element.memberName] != null;
   }

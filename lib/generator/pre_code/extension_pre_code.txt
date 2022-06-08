@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:fhir_generator/build/base_classes/base_classes.dart';
 import 'package:fhir_generator/build/code_systems/code_systems.dart';
-
+import 'package:fhir_generator/build/base_types/base_types.dart';
 //THIS FILE IS AUTO GENERATED! DO NOT EDIT! 
 
 part '{FILE_NAME}.freezed.dart';
@@ -15,4 +15,5 @@ class {RESOURCE_NAME} extends Extension with _${RESOURCE_NAME} {
 
   factory {RESOURCE_NAME}.fromJson(Map<String, dynamic> json) =>
       _${RESOURCE_NAME}FromJson(json);
+
 }

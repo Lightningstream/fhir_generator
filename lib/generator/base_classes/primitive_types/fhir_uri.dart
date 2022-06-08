@@ -8,7 +8,7 @@ import 'package:yaml/yaml.dart';
 
 class FhirUri {
   const FhirUri._(this._valueString, this._valueUri, this._isValid);
-
+  const FhirUri.asConst(this._valueString, this._valueUri, this._isValid);
   factory FhirUri(dynamic inValue) {
     if (inValue is Uri) {
       return FhirUri._(inValue.toString(), inValue, true);

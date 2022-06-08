@@ -14,11 +14,14 @@ abstract class Generator {
 
   Generator(dynamic definitionObject, this.baseDirectory) {
     artifact = definitionObject;
-    baseFileName = camelCaseToUnderscore(
-        artifact['name'].toString().replaceAll(getFromReplacement(), ""));
-    resourceName =
-        artifact['name'].toString().replaceAll(getFromReplacement(), "") +
-            getReplacementNameSpace();
+    String name = hyphenToUpperCaseWithSuffix(
+        artifact['id'].toString().replaceAll(getFromReplacement(), ""), "");
+    if (artifact["id"] == null) {
+      name = hyphenToUpperCaseWithSuffix(
+          artifact['name'].toString().replaceAll(getFromReplacement(), ""), "");
+    }
+    baseFileName = camelCaseToUnderscore(name);
+    resourceName = name + getReplacementNameSpace();
     fileName = camelCaseToUnderscore(resourceName);
   }
 

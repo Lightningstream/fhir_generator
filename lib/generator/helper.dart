@@ -25,7 +25,7 @@ String hyphenToUpperCaseWithSuffix(String name, String suffix) {
 }
 
 String createDefaultType(String propertyName, String defaultValue) {
-  return "@Default('$defaultValue') String $propertyName";
+  return '@Default(FhirUri.asConst("$defaultValue", ConstUri("$defaultValue"),true)) FhirUri $propertyName';
 }
 
 String getMemberName(DifferentialElement element) {
@@ -41,8 +41,6 @@ String getMemberName(DifferentialElement element) {
 String getMemberType(DifferentialElement element) {
   if (element.type != null) {
     switch (element.type![0].code) {
-      case "Reference":
-        return "Reference<Identifier<CodeableConcept<OpenIMISIdentifierCoding>>>";
       case "boolean":
         return "bool";
       case "string":

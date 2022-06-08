@@ -9,7 +9,7 @@ class ExtensionGenerator extends Generator {
   late final List<DifferentialElement> elements;
   ExtensionGenerator(dynamic definitionObject, String baseDirectory)
       : super(definitionObject, baseDirectory) {
-    List<dynamic> elementsDynamic = artifact["differential"]["element"];
+    List<dynamic> elementsDynamic = artifact["snapshot"]["element"];
     elements = elementsDynamic.map<DifferentialElement>((e) {
       return DifferentialElement.fromJson(e);
     }).toList();
@@ -19,7 +19,6 @@ class ExtensionGenerator extends Generator {
   String getFileContent() {
     String preCode = File(preCodeFilePath).readAsStringSync();
     List<String> memberList = _getMapFromElements();
-    print(memberList);
     String constructorList =
         memberList.reduce((value, element) => value + ", \n \t\t" + element);
     return preCode
@@ -34,8 +33,18 @@ class ExtensionGenerator extends Generator {
     for (int i = 1; i < elements.length; i++) {
       DifferentialElement element = elements[i];
       String memberName = getMemberName(element);
-      String memberType = getMemberType(element);
-      String elementString = "required $memberType $memberName";
+      if (memberName.contains(":")) continue;
+      if (element.max == "0" && memberName != "extension") continue;
+      String memberType = element.memberType;
+      if (element.isList) {
+        memberType = "List<$memberType>";
+      }
+      String elementString = "";
+      if (element.min != null && element.min! > 0) {
+        elementString = "required $memberType $memberName";
+      } else {
+        elementString = "$memberType? $memberName";
+      }
       if (memberType == "CodeableConcept") {
         if (i + 1 >= elements.length ||
             elements[i + 1].binding['valueSet'] == null) {
@@ -53,7 +62,6 @@ class ExtensionGenerator extends Generator {
           }
         }
       }
-      if (element.max == '0') continue;
       if (element.fixedUri != null) {
         elementString = createDefaultType(memberName, element.fixedUri!);
       }

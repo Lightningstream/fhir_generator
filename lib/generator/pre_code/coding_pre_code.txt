@@ -1,4 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:fhir_generator/build/base_types/base_types.dart';
+import 'package:fhir_generator/build/base_classes/base_classes.dart';
 import '{FILE_NAME_CODE}.dart';
 
 //THIS FILE IS AUTO GENERATED! DO NOT EDIT! 
@@ -9,7 +11,7 @@ part '{FILE_NAME}.g.dart';
 @freezed
 class {RESOURCE_NAME} with _${RESOURCE_NAME} {
   factory {RESOURCE_NAME}({
-    @Default('{DEFAULT_SYSTEM}') String system,
+    @Default(FhirUri.asConst("{DEFAULT_SYSTEM}", ConstUri("{DEFAULT_SYSTEM}"),true)) FhirUri system,
     required {CODE_SYSTEM_TYPE} code,
   }) = _{RESOURCE_NAME};
 

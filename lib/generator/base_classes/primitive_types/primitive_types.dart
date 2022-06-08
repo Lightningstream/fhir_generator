@@ -19,3 +19,4 @@ export 'positive_int.dart';
 export 'time.dart';
 export 'unsigned_int.dart';
 export 'uuid.dart';
+export 'const_uri.dart';

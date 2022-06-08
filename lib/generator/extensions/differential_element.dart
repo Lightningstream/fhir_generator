@@ -1,6 +1,8 @@
 import 'package:fhir_generator/generator/extensions/differential_element_type.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import '../helper.dart';
+
 part 'differential_element.freezed.dart';
 part 'differential_element.g.dart';
 
@@ -31,9 +33,7 @@ class DifferentialElement with _$DifferentialElement {
   }
 
   String? get subMember {
-    print(id);
     var split = id.split(".");
-    print(split);
     if (split.length >= 3) return split[0];
     return null;
   }
@@ -64,11 +64,23 @@ class DifferentialElement with _$DifferentialElement {
   String get memberType {
     if (memberName == "extension") return "Extension";
     if (type != null) {
+      if (type![0].code == "code" && binding != null) {
+        String valueBind = binding['valueSet']
+            .toString()
+            .split("/")
+            .last
+            .replaceAll(RegExp(r'\|.*'), "");
+        return hyphenToUpperCaseWithSuffix(valueBind, "Code");
+      }
+      if (type![0].code == "CodeableConcept" && binding != null) {
+        String valueBind = binding['valueSet']
+            .toString()
+            .split("/")
+            .last
+            .replaceAll(RegExp(r'\|.*'), "");
+        return "CodeableConcept<${hyphenToUpperCaseWithSuffix(valueBind, "Code")}>";
+      }
       switch (type![0].code) {
-        case "Reference":
-          return "Reference<Identifier<CodeableConcept<OpenIMISIdentifierCoding>>>";
-        case "Identifier":
-          return "Identifier<CodeableConcept<OpenIMISIdentifierCoding>>";
         case "http://hl7.org/fhirpath/System.String":
           return "String";
         default:
