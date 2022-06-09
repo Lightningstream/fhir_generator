@@ -38,9 +38,12 @@ class ResourceGenerator extends Generator {
       if (shouldSkipElement(element)) continue;
       String realType =
           element.isList ? "List<${element.memberType}>" : element.memberType;
+      if (element.memberType == "Attachment") {
+        print(realType);
+      }
       String mappedElement = element.isRequired
           ? "required " + realType + " " + element.memberName
-          : element.memberType + "? " + element.memberName;
+          : realType + "? " + element.memberName;
       if (element.memberName == "class") {
         mappedElement = "@JsonValue('${element.memberName}') " +
             realType +
