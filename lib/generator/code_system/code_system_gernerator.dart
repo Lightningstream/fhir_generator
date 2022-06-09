@@ -5,7 +5,8 @@ import 'package:fhir_generator/generator/generator.dart';
 import 'package:fhir_generator/generator/helper.dart';
 
 class CodeSystemGenerator extends Generator {
-  final String preCodeFilePath = "./pre_code/code_system_pre_code.txt";
+  final String preCodeFilePath =
+      getFilePath("/pre_code/code_system_pre_code.txt");
   late final List<Concept> concepts;
 
   CodeSystemGenerator(dynamic definitionObject, String baseDirectory)

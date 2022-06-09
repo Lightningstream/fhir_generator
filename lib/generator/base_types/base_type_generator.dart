@@ -5,8 +5,9 @@ import 'package:fhir_generator/generator/helper.dart';
 
 class BaseTypeGenerator extends Generator {
   late final Map<String, dynamic> elements;
-  final String preCodeFilePath = "./pre_code/element_pre_code.txt";
-  final String preCodeFilePathTyped = "./pre_code/element_typed_pre_code.txt";
+  final String preCodeFilePath = getFilePath("/pre_code/element_pre_code.txt");
+  final String preCodeFilePathTyped =
+      getFilePath("/pre_code/element_typed_pre_code.txt");
   BaseTypeGenerator(definitionObject, String baseDirectory)
       : super(definitionObject, baseDirectory) {
     elements = Map.from(artifact["element"]);

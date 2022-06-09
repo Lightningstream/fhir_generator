@@ -1,11 +1,18 @@
+import 'dart:io';
+
 import 'package:fhir_generator/generator/extensions/differential_element.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:path/path.dart';
 
 bool isNumeric(String s) {
   if (s == null) {
     return false;
   }
   return double.tryParse(s) != null;
+}
+
+String getFilePath(String path) {
+  return dirname(Platform.script.toString()).replaceAll("file:///", "") + path;
 }
 
 String camelCaseToUnderscore(String name) {

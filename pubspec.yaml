@@ -6,7 +6,9 @@ environment:
   sdk: ">=2.16.2 <3.0.0"
 
 dependencies:
+  build: ^2.3.0
   freezed_annotation: ^1.1.0
+  io: ^1.0.3
   json_annotation: ^4.5.0
   uuid: ^3.0.6
 

@@ -1,6 +1,5 @@
-import 'package:fhir_generator/build/base_classes/base_classes.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-
+import 'element.dart';
 import '../primitive_types/fhir_uri.dart';
 
 class Extension extends Element {

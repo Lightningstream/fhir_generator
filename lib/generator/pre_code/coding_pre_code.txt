@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:fhir_generator/build/base_types/base_types.dart';
-import 'package:fhir_generator/build/base_classes/base_classes.dart';
+import '{BUILD_PATH}/base_types/base_types.dart';
+import '{BUILD_PATH}/abstracts/abstracts.dart';
 import '{FILE_NAME_CODE}.dart';
 
 //THIS FILE IS AUTO GENERATED! DO NOT EDIT! 

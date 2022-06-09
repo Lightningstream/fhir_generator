@@ -1,9 +1,10 @@
 import 'dart:io';
 
 import 'package:fhir_generator/generator/generator.dart';
+import 'package:fhir_generator/generator/helper.dart';
 
 class CodingGenerator extends Generator {
-  final String preCodeFilePath = "./pre_code/coding_pre_code.txt";
+  final String preCodeFilePath = getFilePath("./pre_code/coding_pre_code.txt");
   late final String system;
   CodingGenerator(dynamic definitionObject, String baseDirectory)
       : super(definitionObject, baseDirectory) {

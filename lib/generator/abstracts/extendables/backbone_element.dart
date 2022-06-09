@@ -1,4 +1,5 @@
-import 'package:fhir_generator/build/base_classes/base_classes.dart';
+import 'element.dart';
+import 'extension.dart';
 
 class BackboneElement extends Element {
   final List<Extension>? modifierExtension = null;

@@ -6,7 +6,7 @@ import 'package:fhir_generator/generator/generator.dart';
 import 'package:fhir_generator/generator/helper.dart';
 
 class ResourceGenerator extends Generator {
-  final String preCodeFilePath = "./pre_code/resource_pre_code.txt";
+  final String preCodeFilePath = getFilePath("/pre_code/resource_pre_code.txt");
   late final List<DifferentialElement> elements;
   Map<String, String> mappedElements = Map.from({});
   ResourceGenerator(definitionObject, String baseDirectory)
@@ -99,7 +99,7 @@ class ResourceGenerator extends Generator {
     print("Check for" +
         "../build/base_classes/" +
         camelCaseToUnderscore(element.memberType));
-    File file = File("../build/base_classes/" +
+    File file = File("../build/abstracts/" +
         camelCaseToUnderscore(element.memberType) +
         "/" +
         camelCaseToUnderscore(element.memberType) +

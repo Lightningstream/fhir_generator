@@ -5,7 +5,8 @@ import 'package:fhir_generator/generator/generator.dart';
 import 'package:fhir_generator/generator/helper.dart';
 
 class ExtensionGenerator extends Generator {
-  final String preCodeFilePath = "./pre_code/extension_pre_code.txt";
+  final String preCodeFilePath =
+      getFilePath("/pre_code/extension_pre_code.txt");
   late final List<DifferentialElement> elements;
   ExtensionGenerator(dynamic definitionObject, String baseDirectory)
       : super(definitionObject, baseDirectory) {

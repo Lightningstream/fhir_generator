@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
-
+import 'package:path/path.dart';
+import 'package:build/build.dart';
 import 'package:fhir_generator/generator/helper.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
@@ -29,7 +30,7 @@ abstract class Generator {
   String generateFile() {
     File file = File("$baseDirectory/$baseFileName/$fileName.dart");
     file.createSync(recursive: true);
-    String fileContent = getFileContent();
+    String fileContent = getFileContent().replaceAll("{BUILD_PATH}", "../..");
     file.writeAsStringSync(fileContent, flush: true);
     return "/$baseFileName/$fileName.dart";
   }
