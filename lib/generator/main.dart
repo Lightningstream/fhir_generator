@@ -11,7 +11,7 @@ import 'package:fhir_generator/generator/code_system/code_system_gernerator.dart
 import 'package:fhir_generator/generator/code_system/coding_generator.dart';
 import 'package:fhir_generator/generator/extensions/extension_generator.dart';
 
-main(List<String> arguments) async {
+buildRunner(List<String> arguments) async {
   if (arguments.length != 2) {
     print(
         "Please provide 2 arguments [json folder path] and [build folder path] ");
