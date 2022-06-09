@@ -78,7 +78,7 @@ class DifferentialElement with _$DifferentialElement {
             .split("/")
             .last
             .replaceAll(RegExp(r'\|.*'), "");
-        return "CodeableConcept<${hyphenToUpperCaseWithSuffix(valueBind, "Code")}>";
+        return "CodeableConcept<${hyphenToUpperCaseWithSuffix(valueBind, "Coding")}>";
       }
       switch (type![0].code) {
         case "http://hl7.org/fhirpath/System.String":
