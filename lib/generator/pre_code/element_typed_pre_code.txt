@@ -10,11 +10,9 @@ part '{FILE_NAME}.g.dart';
 
 @freezed
 @JsonSerializable(genericArgumentFactories: true)
-class {RESOURCE_NAME}<T{TYPE_PARAMETER_EXTENSION}> with _${RESOURCE_NAME}<T> {
+class {RESOURCE_NAME}<T{TYPE_PARAMETER_EXTENSION}> extends {EXTENSION_NAME} with _${RESOURCE_NAME}<T> {
   const {RESOURCE_NAME}._();
   factory {RESOURCE_NAME}({
-    String? id,
-    List<Extension>? extension,
     {RESOURCE_CONSTRUCTOR}}) = _{RESOURCE_NAME}<T>;
 
   factory {RESOURCE_NAME}.fromJson(

@@ -41,6 +41,8 @@ class BaseTypeGenerator extends Generator {
     if (artifact["extends"] == "BackboneElement") {
       elementMap["modifierExtension"] = "List<Extension>? modifierExtension";
     }
+    elementMap["id"] = "String? id";
+    elementMap["extension"] = "List<Extension>? extension";
     elements.forEach((key, value) {
       String realValue = value
           .toString()

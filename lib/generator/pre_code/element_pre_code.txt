@@ -9,7 +9,7 @@ part '{FILE_NAME}.freezed.dart';
 part '{FILE_NAME}.g.dart';
 
 @freezed
-class {RESOURCE_NAME} with _${RESOURCE_NAME} {
+class {RESOURCE_NAME} extends {EXTENSION_NAME} with _${RESOURCE_NAME} {
   factory {RESOURCE_NAME}({
     {RESOURCE_CONSTRUCTOR}
   }) = _{RESOURCE_NAME};
