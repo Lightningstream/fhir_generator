@@ -12,10 +12,10 @@ part '{FILE_NAME}.g.dart';
 @JsonSerializable(genericArgumentFactories: true)
 class {RESOURCE_NAME}<T{TYPE_PARAMETER_EXTENSION}> with _${RESOURCE_NAME}<T> {
   const {RESOURCE_NAME}._();
-  const factory {RESOURCE_NAME}(
+  factory {RESOURCE_NAME}({
     String? id,
     List<Extension>? extension,
-    {RESOURCE_CONSTRUCTOR}) = _{RESOURCE_NAME}<T>;
+    {RESOURCE_CONSTRUCTOR}}) = _{RESOURCE_NAME}<T>;
 
   factory {RESOURCE_NAME}.fromJson(
       Map<String, dynamic> json, T Function(Object? json) fromJsonT) {

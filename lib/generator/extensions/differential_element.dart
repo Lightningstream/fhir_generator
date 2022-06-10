@@ -39,7 +39,7 @@ class DifferentialElement with _$DifferentialElement {
   }
 
   bool get isRequired {
-    return min!.toInt() >= 1 || memberName == "extension";
+    return min!.toInt() >= 1;
   }
 
   bool get isList {

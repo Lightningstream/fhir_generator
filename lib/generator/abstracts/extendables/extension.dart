@@ -6,7 +6,7 @@ class Extension extends Element {
   final FhirUri url;
   const Extension._(this.url);
   factory Extension.fromJson(Map<String, dynamic> json) =>
-      Extension._(json['uri']);
+      Extension._(json['url']);
 
   Map<String, dynamic> toJson() => {...super.toJson(), "uri": this.url};
 }

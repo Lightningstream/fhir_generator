@@ -11,6 +11,10 @@ import 'package:fhir_generator/generator/code_system/code_system_gernerator.dart
 import 'package:fhir_generator/generator/code_system/coding_generator.dart';
 import 'package:fhir_generator/generator/extensions/extension_generator.dart';
 
+void main(List<String> args) {
+  buildRunner(args);
+}
+
 buildRunner(List<String> arguments) async {
   if (arguments.length != 2) {
     print(
