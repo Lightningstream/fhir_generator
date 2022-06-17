@@ -1,0 +1,15 @@
+{
+  "name": "Address",
+  "element": {
+    "use": "AddressUseCode",
+    "type": "AddressTypeCode",
+    "text": "<string>",
+    "line": ["<string>"],
+    "city": "<string>",
+    "district": "<string>",
+    "state": "<string>",
+    "postalCode": "<string>",
+    "country": "<string>",
+    "period": "Period"
+  }
+}
