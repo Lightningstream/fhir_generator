@@ -1,0 +1,9 @@
+{
+  "name": "Annotation",
+  "element": {
+    "authorReference": "Reference",
+    "authorString": "<string>",
+    "time": "<dateTime>",
+    "text": "<markdown!>"
+  }
+}

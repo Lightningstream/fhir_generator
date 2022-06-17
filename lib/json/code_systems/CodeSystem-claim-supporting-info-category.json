@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "claim-supporting-info-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/claim-supporting-info-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">explanation<a name=\"claim-supporting-info-category-explanation\"> </a></td><td>Explanation</td></tr><tr><td style=\"white-space:nowrap\">justification<a name=\"claim-supporting-info-category-justification\"> </a></td><td>Justification</td></tr><tr><td style=\"white-space:nowrap\">attachment<a name=\"claim-supporting-info-category-attachment\"> </a></td><td>Attachment</td></tr><tr><td style=\"white-space:nowrap\">guarantee<a name=\"claim-supporting-info-category-guarantee\"> </a></td><td>Guarantee</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/claim-supporting-info-category",
+  "version": "0.1.0",
+  "name": "ClaimSupportingInfoCategoryCS",
+  "title": "Category of the supporting info (Claim)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the category for the supportiong info under a Claim. Values defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "explanation",
+      "display": "Explanation"
+    },
+    {
+      "code": "justification",
+      "display": "Justification"
+    },
+    {
+      "code": "attachment",
+      "display": "Attachment"
+    },
+    {
+      "code": "guarantee",
+      "display": "Guarantee"
+    }
+  ]
+}

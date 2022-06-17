@@ -1,0 +1,8 @@
+{
+  "name": "CodeableConcept",
+  "typing": true,
+  "element": {
+    "coding": ["T"],
+    "text": "<string>"
+  }
+}

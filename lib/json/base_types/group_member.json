@@ -1,0 +1,7 @@
+{
+  "name": "OpenImisGroupMember",
+  "extends": "BackboneElement",
+  "element": {
+    "entity": "Reference"
+  }
+}

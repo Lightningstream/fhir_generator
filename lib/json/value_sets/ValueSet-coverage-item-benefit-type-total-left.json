@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "coverage-item-benefit-type-total-left",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-coverage-item-benefit-type.html\"><code>https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/coverage-item-benefit-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-admissions_left\">admissions_left</a></td><td>total_admissions</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-visits_left\">visits_left</a></td><td>total_visits</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-consultations_left\">consultations_left</a></td><td>total_consultations</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-surgeries_left\">surgeries_left</a></td><td>total_surgeries</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-deliveries_left\">deliveries_left</a></td><td>total_deliveries</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-antenatal_left\">antenatal_left</a></td><td>total_antenatal</td></tr></table></li></ul></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/ValueSet/coverage-item-benefit-type-total-left",
+  "version": "0.1.0",
+  "name": "CoverageItemBenefitTypeTotalLeftVS",
+  "title": "Type of benefit as total left (Coverage)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the type of benefit under a Coverage. Values defined by openIMIS. Can not be extended.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/coverage-item-benefit-type",
+        "concept": [
+          {
+            "code": "admissions_left",
+            "display": "total_admissions"
+          },
+          {
+            "code": "visits_left",
+            "display": "total_visits"
+          },
+          {
+            "code": "consultations_left",
+            "display": "total_consultations"
+          },
+          {
+            "code": "surgeries_left",
+            "display": "total_surgeries"
+          },
+          {
+            "code": "deliveries_left",
+            "display": "total_deliveries"
+          },
+          {
+            "code": "antenatal_left",
+            "display": "total_antenatal"
+          }
+        ]
+      }
+    ]
+  }
+}

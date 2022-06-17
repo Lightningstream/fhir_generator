@@ -1,4 +1,7 @@
 # fhir_generator
+
+THIS BRANCH CONTAINS THE OPENIMIS SPECIFIC BUILD FOR http://fhir.openimis.org/. Checkout the main branch to see the general fhir generator.
+
 A generator for fhir dart classes with json artifacts. Thie generator uses the [freezed](https://pub.dev/packages/freezed) package to generate the data classes. It also uses all the `primitive_types` from the [fhir](https://pub.dev/packages/fhir) package. 
 
 ## How to Use

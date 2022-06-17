@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "organization-ph-legal-form",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/organization-ph-legal-form defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"organization-ph-legal-form-1\"> </a></td><td>Personal Company</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"organization-ph-legal-form-2\"> </a></td><td>Limited Risk Company</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"organization-ph-legal-form-3\"> </a></td><td>Association</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"organization-ph-legal-form-4\"> </a></td><td>Government</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"organization-ph-legal-form-5\"> </a></td><td>Union</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/organization-ph-legal-form",
+  "version": "0.1.0",
+  "name": "OrganizationPHLegalFormCS",
+  "title": "Legal Forms (Organization)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the legal forms of the PolicyHolder Organization. Values defined by openIMIS. Can be extended.",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Personal Company"
+    },
+    {
+      "code": "2",
+      "display": "Limited Risk Company"
+    },
+    {
+      "code": "3",
+      "display": "Association"
+    },
+    {
+      "code": "4",
+      "display": "Government"
+    },
+    {
+      "code": "5",
+      "display": "Union"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "UsageContext",
+  "element": {
+    "code": "UsageContextTypeCoding",
+    "valueCodeableConcept": "CodeableConcept",
+    "valueQuantity": "Quantity",
+    "valueRange": "Range",
+    "valueReference": "Reference"
+  }
+}

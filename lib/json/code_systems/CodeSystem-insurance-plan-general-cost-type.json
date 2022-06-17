@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "insurance-plan-general-cost-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/insurance-plan-general-cost-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">lumpsum<a name=\"insurance-plan-general-cost-type-lumpsum\"> </a></td><td>Lumpsum</td></tr><tr><td style=\"white-space:nowrap\">premiumAdult<a name=\"insurance-plan-general-cost-type-premiumAdult\"> </a></td><td>Premium Adult</td></tr><tr><td style=\"white-space:nowrap\">premiumChild<a name=\"insurance-plan-general-cost-type-premiumChild\"> </a></td><td>Premium Child</td></tr><tr><td style=\"white-space:nowrap\">registrationLumpsum<a name=\"insurance-plan-general-cost-type-registrationLumpsum\"> </a></td><td>Registration Lumpsum</td></tr><tr><td style=\"white-space:nowrap\">registrationFee<a name=\"insurance-plan-general-cost-type-registrationFee\"> </a></td><td>Registration Fee</td></tr><tr><td style=\"white-space:nowrap\">generalAssemblyLumpSum<a name=\"insurance-plan-general-cost-type-generalAssemblyLumpSum\"> </a></td><td>General Assembly Lump Sum</td></tr><tr><td style=\"white-space:nowrap\">generalAssemblyFee<a name=\"insurance-plan-general-cost-type-generalAssemblyFee\"> </a></td><td>General Assembly Fee</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/insurance-plan-general-cost-type",
+  "version": "0.1.0",
+  "name": "InsurancePlanGeneralCostTypeCS",
+  "title": "General Cost Type (InsurancePlan)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the General Cost Type for an InsurancePlan. Values defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "lumpsum",
+      "display": "Lumpsum"
+    },
+    {
+      "code": "premiumAdult",
+      "display": "Premium Adult"
+    },
+    {
+      "code": "premiumChild",
+      "display": "Premium Child"
+    },
+    {
+      "code": "registrationLumpsum",
+      "display": "Registration Lumpsum"
+    },
+    {
+      "code": "registrationFee",
+      "display": "Registration Fee"
+    },
+    {
+      "code": "generalAssemblyLumpSum",
+      "display": "General Assembly Lump Sum"
+    },
+    {
+      "code": "generalAssemblyFee",
+      "display": "General Assembly Fee"
+    }
+  ]
+}

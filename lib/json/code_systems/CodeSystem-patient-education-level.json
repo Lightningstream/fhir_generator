@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "patient-education-level",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/patient-education-level defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"patient-education-level-1\"> </a></td><td>Nursery</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"patient-education-level-2\"> </a></td><td>Primary school</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"patient-education-level-3\"> </a></td><td>Secondary school</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"patient-education-level-4\"> </a></td><td>University</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"patient-education-level-5\"> </a></td><td>Postgraduate studies</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"patient-education-level-6\"> </a></td><td>PHD</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"patient-education-level-7\"> </a></td><td>Other</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/patient-education-level",
+  "version": "0.1.0",
+  "name": "PatientEducationLevelCS",
+  "title": "Education Level (Patient)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the Education level of a Patient. Values defined by openIMIS. Can be extended.",
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Nursery"
+    },
+    {
+      "code": "2",
+      "display": "Primary school"
+    },
+    {
+      "code": "3",
+      "display": "Secondary school"
+    },
+    {
+      "code": "4",
+      "display": "University"
+    },
+    {
+      "code": "5",
+      "display": "Postgraduate studies"
+    },
+    {
+      "code": "6",
+      "display": "PHD"
+    },
+    {
+      "code": "7",
+      "display": "Other"
+    }
+  ]
+}

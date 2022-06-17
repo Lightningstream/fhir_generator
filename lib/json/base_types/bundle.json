@@ -1,0 +1,10 @@
+{
+  "name": "Bundle",
+  "typing": true,
+  "element": {
+    "type": "BundleTypeCode",
+    "total": "unsignedInt",
+    "link": ["Link"],
+    "entry": ["Entry(T)"]
+  }
+}

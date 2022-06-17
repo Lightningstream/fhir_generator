@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "organization-ph-activity",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/organization-ph-activity defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"organization-ph-activity-1\"> </a></td><td>Retail</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"organization-ph-activity-2\"> </a></td><td>Industry</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"organization-ph-activity-3\"> </a></td><td>Building</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"organization-ph-activity-4\"> </a></td><td>Sailing</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"organization-ph-activity-5\"> </a></td><td>Services</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/organization-ph-activity",
+  "version": "0.1.0",
+  "name": "OrganizationPHActivityCS",
+  "title": "Activity (Organization)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the activity of the PolicyHolder Organization. Values defined by openIMIS. Can be extended.",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Retail"
+    },
+    {
+      "code": "2",
+      "display": "Industry"
+    },
+    {
+      "code": "3",
+      "display": "Building"
+    },
+    {
+      "code": "4",
+      "display": "Sailing"
+    },
+    {
+      "code": "5",
+      "display": "Services"
+    }
+  ]
+}

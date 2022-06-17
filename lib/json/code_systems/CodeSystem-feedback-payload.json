@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "feedback-payload",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/feedback-payload defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CareRendered<a name=\"feedback-payload-CareRendered\"> </a></td><td>Care Rendered? (yes|no)</td></tr><tr><td style=\"white-space:nowrap\">PaymentAsked<a name=\"feedback-payload-PaymentAsked\"> </a></td><td>Payment Asked? (yes|no)</td></tr><tr><td style=\"white-space:nowrap\">DrugPrescribed<a name=\"feedback-payload-DrugPrescribed\"> </a></td><td>Drug Prescribed? (yes|no)</td></tr><tr><td style=\"white-space:nowrap\">DrugReceived<a name=\"feedback-payload-DrugReceived\"> </a></td><td>Drug Received? (yes|no)</td></tr><tr><td style=\"white-space:nowrap\">Asessment<a name=\"feedback-payload-Asessment\"> </a></td><td>Asessment? (0|1|2|3|4|5)</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/feedback-payload",
+  "version": "0.1.0",
+  "name": "FeedbackPayloadCS",
+  "title": "Feedback Payload (CommunicationRequest | Communication)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the Feedback Payload code for a CommunicationRequest and Communication. List defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "CareRendered",
+      "display": "Care Rendered? (yes|no)"
+    },
+    {
+      "code": "PaymentAsked",
+      "display": "Payment Asked? (yes|no)"
+    },
+    {
+      "code": "DrugPrescribed",
+      "display": "Drug Prescribed? (yes|no)"
+    },
+    {
+      "code": "DrugReceived",
+      "display": "Drug Received? (yes|no)"
+    },
+    {
+      "code": "Asessment",
+      "display": "Asessment? (0|1|2|3|4|5)"
+    }
+  ]
+}

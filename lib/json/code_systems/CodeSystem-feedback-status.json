@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "feedback-status",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/feedback-status defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"feedback-status-4\"> </a></td><td>Selected</td><td>Selected for Feedback</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"feedback-status-8\"> </a></td><td>Delivered</td><td>Feedback delivered</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"feedback-status-16\"> </a></td><td>Bypassed</td><td>Feedback bypassed</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/feedback-status",
+  "version": "0.1.0",
+  "name": "FeedbackStatusCS",
+  "title": "Feedback Status (CommunicationRequest)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the Feedback Status for a CommunicationRequest. Partial list defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "4",
+      "display": "Selected",
+      "definition": "Selected for Feedback"
+    },
+    {
+      "code": "8",
+      "display": "Delivered",
+      "definition": "Feedback delivered"
+    },
+    {
+      "code": "16",
+      "display": "Bypassed",
+      "definition": "Feedback bypassed"
+    }
+  ]
+}

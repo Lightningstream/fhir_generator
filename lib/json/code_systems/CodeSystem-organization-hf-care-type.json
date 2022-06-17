@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "organization-hf-care-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/organization-hf-care-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"organization-hf-care-type-I\"> </a></td><td>In-Patient</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"organization-hf-care-type-O\"> </a></td><td>Out-Patient</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"organization-hf-care-type-B\"> </a></td><td>Both</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/organization-hf-care-type",
+  "version": "0.1.0",
+  "name": "OrganizationHFCareTypeCS",
+  "title": "Health Facility Care Type (Organization)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the care type of the Health Facility (Organization). Values defined by openIMIS. Cannot be extended.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "I",
+      "display": "In-Patient"
+    },
+    {
+      "code": "O",
+      "display": "Out-Patient"
+    },
+    {
+      "code": "B",
+      "display": "Both"
+    }
+  ]
+}

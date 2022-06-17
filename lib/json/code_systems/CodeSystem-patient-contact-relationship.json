@@ -1,0 +1,73 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "patient-contact-relationship",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/patient-contact-relationship defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"patient-contact-relationship-1\"> </a></td><td>Brother/Sister</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"patient-contact-relationship-2\"> </a></td><td>Father/Mother</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"patient-contact-relationship-3\"> </a></td><td>Uncle/Aunt</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"patient-contact-relationship-4\"> </a></td><td>Son/Daughter</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"patient-contact-relationship-5\"> </a></td><td>Grand parents</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"patient-contact-relationship-6\"> </a></td><td>Employee</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"patient-contact-relationship-7\"> </a></td><td>Others</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"patient-contact-relationship-8\"> </a></td><td>Spouse</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/patient-contact-relationship",
+  "version": "0.1.0",
+  "name": "PatientContactRelationshipCS",
+  "title": "Contact Relationship (Patient)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the Relationship of a Patient with the Head of the Family. Values defined by openIMIS.",
+  "content": "complete",
+  "count": 8,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Brother/Sister"
+    },
+    {
+      "code": "2",
+      "display": "Father/Mother"
+    },
+    {
+      "code": "3",
+      "display": "Uncle/Aunt"
+    },
+    {
+      "code": "4",
+      "display": "Son/Daughter"
+    },
+    {
+      "code": "5",
+      "display": "Grand parents"
+    },
+    {
+      "code": "6",
+      "display": "Employee"
+    },
+    {
+      "code": "7",
+      "display": "Others"
+    },
+    {
+      "code": "8",
+      "display": "Spouse"
+    }
+  ]
+}

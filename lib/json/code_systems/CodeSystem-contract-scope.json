@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "contract-scope",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/contract-scope defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">formal<a name=\"contract-scope-formal\"> </a></td><td>Formal Sector</td></tr><tr><td style=\"white-space:nowrap\">informal<a name=\"contract-scope-informal\"> </a></td><td>Informal Sector</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/contract-scope",
+  "version": "0.1.0",
+  "name": "ContractScopeCS",
+  "title": "Scope (Contract)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the scope for the Contract. Values defined by openIMIS. Cannot be extended.",
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "formal",
+      "display": "Formal Sector"
+    },
+    {
+      "code": "informal",
+      "display": "Informal Sector"
+    }
+  ]
+}

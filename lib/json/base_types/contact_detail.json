@@ -1,0 +1,7 @@
+{
+  "name": "ContactDetail",
+  "element": {
+    "name": "<string>",
+    "telecom": ["ContactPoint"]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Coding",
+  "typing": true,
+  "element": {
+    "system": "<FhirUri>",
+    "version": "<string>",
+    "code": "T",
+    "display": "<string>",
+    "userSelected": "<boolean>"
+  }
+}

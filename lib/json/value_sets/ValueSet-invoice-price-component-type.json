@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "invoice-price-component-type",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-invoice-priceComponentType.html\"><code>http://hl7.org/fhir/invoice-priceComponentType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-invoice-priceComponentType.html#invoice-priceComponentType-base\">base</a></td><td>base price</td><td>the amount is the base price used for calculating the total price before applying surcharges, discount or taxes.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-invoice-priceComponentType.html#invoice-priceComponentType-discount\">discount</a></td><td>discount</td><td>the amount is a discount applied on the base price.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-invoice-priceComponentType.html#invoice-priceComponentType-deduction\">deduction</a></td><td>deduction</td><td>the amount is a deduction applied on the base price.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-invoice-priceComponentType.html#invoice-priceComponentType-tax\">tax</a></td><td>tax</td><td>the amount is the tax component of the total price.</td></tr></table></li></ul></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/ValueSet/invoice-price-component-type",
+  "version": "0.1.0",
+  "name": "InvoicePriceComponentTypeVS",
+  "title": "PriceComponent Type (Invoice)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the Type for a PriceComponent from an Invoice.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/invoice-priceComponentType",
+        "concept": [
+          {
+            "code": "base",
+            "display": "base price"
+          },
+          {
+            "code": "discount",
+            "display": "discount"
+          },
+          {
+            "code": "deduction",
+            "display": "deduction"
+          },
+          {
+            "code": "tax",
+            "display": "tax"
+          }
+        ]
+      }
+    ]
+  }
+}

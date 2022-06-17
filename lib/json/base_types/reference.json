@@ -1,0 +1,9 @@
+{
+  "name": "Reference",
+  "element": {
+    "reference": "<string>",
+    "type": "<FhirUri>",
+    "identifier": "Identifier",
+    "display": "<string>"
+  }
+}

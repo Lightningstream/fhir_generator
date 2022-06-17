@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "contract-premium-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/contract-premium-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"contract-premium-category-C\"> </a></td><td>Contribution and Others</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"contract-premium-category-P\"> </a></td><td>Photo Fee</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/contract-premium-category",
+  "version": "0.1.0",
+  "name": "ContractPremiumCategoryCS",
+  "title": "Premium Category (Contract)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the category of the premium for the Contract. Cannot be extended.",
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "C",
+      "display": "Contribution and Others"
+    },
+    {
+      "code": "P",
+      "display": "Photo Fee"
+    }
+  ]
+}

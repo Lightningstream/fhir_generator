@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "coverage-item-benefit-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-coverage-item-benefit-type.html\"><code>https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/coverage-item-benefit-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-item_left\">item_left</a></td><td>Items left</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-min_date_item\">min_date_item</a></td><td>Mininum date</td></tr></table></li></ul></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/ValueSet/coverage-item-benefit-type",
+  "version": "0.1.0",
+  "name": "CoverageItemBenefitTypeItemServiceVS",
+  "title": "Type of benefit (Coverage)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the type of benefit under a Coverage. Values defined by openIMIS. Can not be extended.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/coverage-item-benefit-type",
+        "concept": [
+          {
+            "code": "item_left",
+            "display": "Items left"
+          },
+          {
+            "code": "min_date_item",
+            "display": "Mininum date"
+          }
+        ]
+      }
+    ]
+  }
+}

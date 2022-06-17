@@ -1,0 +1,8 @@
+{
+  "name": "Timing",
+  "extends": "BackboneElement",
+  "element": {
+    "event": ["<dateTime>"],
+    "code": "CodeableConcept(TimingAbbreviationCode)"
+  }
+}

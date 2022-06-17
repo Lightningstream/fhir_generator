@@ -1,0 +1,11 @@
+{
+  "name": "Meta",
+  "element": {
+    "versionId": "<id>",
+    "lastUpdated": "<instant>",
+    "source": "<FhirUri>",
+    "profile": ["canonical"],
+    "security": ["Coding"],
+    "tag": ["CommonTagsCoding"]
+  }
+}

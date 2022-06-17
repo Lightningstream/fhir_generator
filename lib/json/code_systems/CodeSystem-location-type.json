@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "location-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/location-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"location-type-R\"> </a></td><td>Region</td><td>Regional location level</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"location-type-D\"> </a></td><td>District</td><td>District location level</td></tr><tr><td style=\"white-space:nowrap\">W<a name=\"location-type-W\"> </a></td><td>Municipality/Ward</td><td>Municipality/Ward location level</td></tr><tr><td style=\"white-space:nowrap\">V<a name=\"location-type-V\"> </a></td><td>City/Village</td><td>City/Village location level</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/location-type",
+  "version": "0.1.0",
+  "name": "LocationTypeCS",
+  "title": "Location Type (Location)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the location type. Values defined by openIMIS. Cannot be extended.",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "R",
+      "display": "Region",
+      "definition": "Regional location level"
+    },
+    {
+      "code": "D",
+      "display": "District",
+      "definition": "District location level"
+    },
+    {
+      "code": "W",
+      "display": "Municipality/Ward",
+      "definition": "Municipality/Ward location level"
+    },
+    {
+      "code": "V",
+      "display": "City/Village",
+      "definition": "City/Village location level"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "claim-item-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/claim-item-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">item<a name=\"claim-item-category-item\"> </a></td><td>Item</td></tr><tr><td style=\"white-space:nowrap\">service<a name=\"claim-item-category-service\"> </a></td><td>Service</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/claim-item-category",
+  "version": "0.1.0",
+  "name": "ClaimItemCategoryCS",
+  "title": "Category of the item (Claim)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the category for the item under a Claim. Values defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "item",
+      "display": "Item"
+    },
+    {
+      "code": "service",
+      "display": "Service"
+    }
+  ]
+}

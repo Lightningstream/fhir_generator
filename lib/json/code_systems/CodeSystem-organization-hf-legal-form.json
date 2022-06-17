@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "organization-hf-legal-form",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/organization-hf-legal-form defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"organization-hf-legal-form-C\"> </a></td><td>Charity</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"organization-hf-legal-form-D\"> </a></td><td>District organization</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"organization-hf-legal-form-G\"> </a></td><td>Government</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"organization-hf-legal-form-P\"> </a></td><td>Private organization</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/organization-hf-legal-form",
+  "version": "0.1.0",
+  "name": "OrganizationHFLegalFormCS",
+  "title": "Legal Forms (Organization)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the legal forms of the Organization. Values defined by openIMIS. Can be extended.",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "C",
+      "display": "Charity"
+    },
+    {
+      "code": "D",
+      "display": "District organization"
+    },
+    {
+      "code": "G",
+      "display": "Government"
+    },
+    {
+      "code": "P",
+      "display": "Private organization"
+    }
+  ]
+}

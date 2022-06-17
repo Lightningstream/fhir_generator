@@ -1,0 +1,12 @@
+{
+  "name": "Identifier",
+  "extends": "Element",
+  "element": {
+    "use": "<IdentifierUseCode>",
+    "type": "CodeableConcept(IdentifierTypeCoding)",
+    "system": "<FhirUri>",
+    "value": "<string>",
+    "period": "Period",
+    "assigner": "Reference"
+  }
+}

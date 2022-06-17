@@ -1,0 +1,10 @@
+{
+  "name": "ContactPoint",
+  "element": {
+    "system": "<ContactPointSystemCode>",
+    "value": "<string>",
+    "use": "<ContactPointUseCode>",
+    "rank": "<positiveInt>",
+    "period": "Period"
+  }
+}

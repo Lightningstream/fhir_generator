@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "claim-supporting-info-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-claim-supporting-info-category.html\"><code>https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/claim-supporting-info-category</code></a></li></ul></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/ValueSet/claim-supporting-info-category",
+  "version": "0.1.0",
+  "name": "ClaimSupportingInfoCategoryVS",
+  "title": "Category of the supporting info (Claim)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the category for the supportiong info under a Claim. Values defined by openIMIS. Can not be extended.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/claim-supporting-info-category"
+      }
+    ]
+  }
+}

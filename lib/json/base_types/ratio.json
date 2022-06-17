@@ -1,0 +1,7 @@
+{
+  "name": "Ratio",
+  "element": {
+    "numerator": "Quantity",
+    "denominator": "Quantity"
+  }
+}

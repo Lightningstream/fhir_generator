@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "contract-premium-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/contract-premium-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"contract-premium-type-C\"> </a></td><td>Cash</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"contract-premium-type-B\"> </a></td><td>Bank Transfer</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"contract-premium-type-M\"> </a></td><td>Mobile Phone</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/contract-premium-type",
+  "version": "0.1.0",
+  "name": "ContractPremiumTypeCS",
+  "title": "Premium Type (Contract)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the type of the premium for the Contract. Cannot be extended.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "C",
+      "display": "Cash"
+    },
+    {
+      "code": "B",
+      "display": "Bank Transfer"
+    },
+    {
+      "code": "M",
+      "display": "Mobile Phone"
+    }
+  ]
+}

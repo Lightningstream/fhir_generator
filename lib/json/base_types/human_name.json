@@ -1,0 +1,12 @@
+{
+  "name": "HumanName",
+  "element": {
+    "use": "NameUseCode",
+    "text": "string",
+    "family": "string",
+    "given": ["string"],
+    "prefix": ["string"],
+    "suffix": ["string"],
+    "period": "Period"
+  }
+}

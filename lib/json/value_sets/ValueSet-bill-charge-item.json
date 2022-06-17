@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "bill-charge-item",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-bill-charge-item.html\"><code>https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/bill-charge-item</code></a></li></ul></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/ValueSet/bill-charge-item",
+  "version": "0.1.0",
+  "name": "BillChargeItemVS",
+  "title": "ChargeItem (Bill Invoice)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the ChargeItem for a lineItem from a Bill. Values defined by openIMIS. Can not be extended.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/bill-charge-item"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-level",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/medication-level defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"medication-level-M\"> </a></td><td>Medication</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/medication-level",
+  "version": "0.1.0",
+  "name": "MedicationLevelCS",
+  "title": "Level (Medication)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the Level for a Medication. Values defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "M",
+      "display": "Medication"
+    }
+  ]
+}

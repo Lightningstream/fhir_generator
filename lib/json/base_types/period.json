@@ -1,0 +1,7 @@
+{
+  "name": "Period",
+  "element": {
+    "start": "<dateTime>",
+    "end": "<dateTime>"
+  }
+}

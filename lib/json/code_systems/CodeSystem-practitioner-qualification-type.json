@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "practitioner-qualification-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/practitioner-qualification-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CA<a name=\"practitioner-qualification-type-CA\"> </a></td><td>Claim Administrator</td></tr><tr><td style=\"white-space:nowrap\">EO<a name=\"practitioner-qualification-type-EO\"> </a></td><td>Enrolment Officer</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/practitioner-qualification-type",
+  "version": "0.1.0",
+  "name": "PractitionerQualificationTypeCS",
+  "title": "Qualification Type (Practitioner)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the Qualification Type of a Practitioner.",
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "CA",
+      "display": "Claim Administrator"
+    },
+    {
+      "code": "EO",
+      "display": "Enrolment Officer"
+    }
+  ]
+}

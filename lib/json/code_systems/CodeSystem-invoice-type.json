@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "invoice-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/invoice-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">contribution<a name=\"invoice-type-contribution\"> </a></td><td>Contribution</td><td>To pay the contribution for a Policy under the Informal Sector coverage.</td></tr><tr><td style=\"white-space:nowrap\">contract<a name=\"invoice-type-contract\"> </a></td><td>Contract</td><td>To pay the contributions under the Formal Sector coverage.</td></tr><tr><td style=\"white-space:nowrap\">funding<a name=\"invoice-type-funding\"> </a></td><td>Funding</td><td>To create a request for external funds.</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/invoice-type",
+  "version": "0.1.0",
+  "name": "InvoiceTypeCS",
+  "title": "Type (Invoice)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the Type for an Invoice. Values defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "contribution",
+      "display": "Contribution",
+      "definition": "To pay the contribution for a Policy under the Informal Sector coverage."
+    },
+    {
+      "code": "contract",
+      "display": "Contract",
+      "definition": "To pay the contributions under the Formal Sector coverage."
+    },
+    {
+      "code": "funding",
+      "display": "Funding",
+      "definition": "To create a request for external funds."
+    }
+  ]
+}

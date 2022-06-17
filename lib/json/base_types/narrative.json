@@ -1,0 +1,7 @@
+{
+  "name": "Narrative",
+  "element": {
+    "status": "NarrativeStatusCode!",
+    "div": "string!"
+  }
+}

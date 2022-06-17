@@ -1,0 +1,13 @@
+{
+  "name": "Attachment",
+  "element": {
+    "contentType": "<code>",
+    "language": "<LanguagesCode>",
+    "data": "<base64Binary>",
+    "url": "<FhirUrl>",
+    "size": "<unsignedInt>",
+    "hash": "<base64Binary>",
+    "title": "<string>",
+    "creation": "<dateTime>"
+  }
+}

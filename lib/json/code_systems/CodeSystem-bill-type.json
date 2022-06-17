@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "bill-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/bill-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">claim-batch<a name=\"bill-type-claim-batch\"> </a></td><td>Claim batch payment</td><td>How much the insurance need to pay the HF for the claims reimbursment.</td></tr><tr><td style=\"white-space:nowrap\">commission<a name=\"bill-type-commission\"> </a></td><td>Commission</td><td>How much the insurance need to pay the commission to EO.</td></tr><tr><td style=\"white-space:nowrap\">fees<a name=\"bill-type-fees\"> </a></td><td>Fees</td><td>How much the insurance need to pay the payment platform for the fee for payment service.</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/bill-type",
+  "version": "0.1.0",
+  "name": "BillTypeCS",
+  "title": "Type (Bill Invoice)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the Type for Bill. Values defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "claim-batch",
+      "display": "Claim batch payment",
+      "definition": "How much the insurance need to pay the HF for the claims reimbursment."
+    },
+    {
+      "code": "commission",
+      "display": "Commission",
+      "definition": "How much the insurance need to pay the commission to EO."
+    },
+    {
+      "code": "fees",
+      "display": "Fees",
+      "definition": "How much the insurance need to pay the payment platform for the fee for payment service."
+    }
+  ]
+}

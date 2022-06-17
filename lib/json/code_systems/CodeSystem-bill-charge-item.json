@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "bill-charge-item",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/bill-charge-item defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">claim<a name=\"bill-charge-item-claim\"> </a></td><td>Claim</td><td>Fee-for-service or Capitation amount</td></tr><tr><td style=\"white-space:nowrap\">commission<a name=\"bill-charge-item-commission\"> </a></td><td>Commission</td><td>Commission amount</td></tr><tr><td style=\"white-space:nowrap\">fees<a name=\"bill-charge-item-fees\"> </a></td><td>Fees</td><td>Fees amount</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/bill-charge-item",
+  "version": "0.1.0",
+  "name": "BillChargeItemCS",
+  "title": "ChargeItem (Bill Invoice)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the ChargeItem for a lineItem from a Bill. Values defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "claim",
+      "display": "Claim",
+      "definition": "Fee-for-service or Capitation amount"
+    },
+    {
+      "code": "commission",
+      "display": "Commission",
+      "definition": "Commission amount"
+    },
+    {
+      "code": "fees",
+      "display": "Fees",
+      "definition": "Fees amount"
+    }
+  ]
+}

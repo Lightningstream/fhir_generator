@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "insurance-plan-coverage-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-insurance-plan-type.html\"><code>http://terminology.hl7.org/CodeSystem/insurance-plan-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-insurance-plan-type.html#insurance-plan-type-medical\">medical</a></td><td>Medical</td></tr></table></li></ul></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/ValueSet/insurance-plan-coverage-type",
+  "version": "1.0.0",
+  "name": "InsurancePlanCoverageTypeVS",
+  "title": "Coverage Type (InsurancePlan)",
+  "status": "active",
+  "date": "2022-05-31T10:56:28+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the Coverage Type for an InsurancePlan.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/insurance-plan-type",
+        "concept": [
+          {
+            "code": "medical",
+            "display": "Medical"
+          }
+        ]
+      }
+    ]
+  }
+}

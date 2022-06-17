@@ -1,0 +1,7 @@
+{
+  "name": "Range",
+  "element": {
+    "low": "Quantity",
+    "high": "Quantity"
+  }
+}

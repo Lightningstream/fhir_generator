@@ -1,0 +1,10 @@
+{
+  "name": "Quantity",
+  "element": {
+    "value": "<decimal>",
+    "comparator": "QuantityComparatorCode",
+    "unit": "<string>",
+    "system": "<FhirUri>",
+    "code": "<code>"
+  }
+}

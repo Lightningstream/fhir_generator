@@ -1,0 +1,22 @@
+{
+  "name": "Repeat",
+  "element": {
+    "boundsDuration": " Duration ",
+    "boundsRange": " Range ",
+    "boundsPeriod": " Period ",
+    "count": "<positiveInt>",
+    "countMax": "<positiveInt>",
+    "duration": "decimal",
+    "durationMax": "decimal",
+    "durationUnit": "<UnitsOfTimeCode>",
+    "frequency": "<positiveInt>",
+    "frequencyMax": "<positiveInt>",
+    "period": "decimal",
+    "periodMax": "decimal",
+    "periodUnit": "<UnitsOfTimeCode>",
+    "dayOfWeek": ["<DaysOfWeekCode>"],
+    "timeOfDay": ["<time>"],
+    "when": ["<code>"],
+    "offset": "<unsignedInt>"
+  }
+}

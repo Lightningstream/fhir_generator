@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "coverage-item-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/coverage-item-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">item<a name=\"coverage-item-category-item\"> </a></td><td>Item</td></tr><tr><td style=\"white-space:nowrap\">service<a name=\"coverage-item-category-service\"> </a></td><td>Service</td></tr><tr><td style=\"white-space:nowrap\">benefit<a name=\"coverage-item-category-benefit\"> </a></td><td>Benefit Package</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/coverage-item-category",
+  "version": "0.1.0",
+  "name": "CoverageItemCategoryCS",
+  "title": "Category of the item (Coverage)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the category for the item under a Coverage. Values defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "item",
+      "display": "Item"
+    },
+    {
+      "code": "service",
+      "display": "Service"
+    },
+    {
+      "code": "benefit",
+      "display": "Benefit Package"
+    }
+  ]
+}

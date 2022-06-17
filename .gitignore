@@ -3,5 +3,5 @@
 .packages
 
 # Conventional directory for build output.
-build/
-json/
+# build/
+# json/

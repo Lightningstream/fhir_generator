@@ -1,0 +1,8 @@
+{
+  "name": "Entry",
+  "typing": true,
+  "element": {
+    "fullUrl": "FhirUri",
+    "resource": "T"
+  }
+}

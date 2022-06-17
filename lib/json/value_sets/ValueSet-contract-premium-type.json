@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "contract-premium-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-contract-premium-type.html\"><code>https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/contract-premium-type</code></a></li></ul></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/ValueSet/contract-premium-type",
+  "version": "0.1.0",
+  "name": "ContractPremiumTypeVS",
+  "title": "Premium Type (Contract)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the type of the premium for the Contract. Cannot be extended.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/contract-premium-type"
+      }
+    ]
+  }
+}

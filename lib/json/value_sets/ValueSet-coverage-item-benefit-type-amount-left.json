@@ -1,0 +1,82 @@
+{
+  "resourceType": "ValueSet",
+  "id": "coverage-item-benefit-type-amount-left",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-coverage-item-benefit-type.html\"><code>https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/coverage-item-benefit-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-consultation_amount\">consultation_amount</a></td><td>consultation_amount</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-surgery_amount\">surgery_amount</a></td><td>surgery_amount</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-delivery_amount\">delivery_amount</a></td><td>delivery_amount</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-hospitalization_amount\">hospitalization_amount</a></td><td>hospitalization_amount</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-antenatal_amount\">antenatal_amount</a></td><td>antenatal_amount</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-hospital_deduction\">hospital_deduction</a></td><td>hospital_deduction</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-non_hospital_deduction\">non_hospital_deduction</a></td><td>non_hospital_deduction</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-hospital_ceiling\">hospital_ceiling</a></td><td>hospital_ceiling</td></tr><tr><td><a href=\"CodeSystem-coverage-item-benefit-type.html#coverage-item-benefit-type-non_hospital_ceiling\">non_hospital_ceiling</a></td><td>non_hospital_ceiling</td></tr></table></li></ul></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/ValueSet/coverage-item-benefit-type-amount-left",
+  "version": "0.1.0",
+  "name": "CoverageItemBenefitTypeAmountLeftVS",
+  "title": "Type of benefit as amount left (Coverage)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the type of benefit under a Coverage. Values defined by openIMIS. Can not be extended.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/coverage-item-benefit-type",
+        "concept": [
+          {
+            "code": "consultation_amount",
+            "display": "consultation_amount"
+          },
+          {
+            "code": "surgery_amount",
+            "display": "surgery_amount"
+          },
+          {
+            "code": "delivery_amount",
+            "display": "delivery_amount"
+          },
+          {
+            "code": "hospitalization_amount",
+            "display": "hospitalization_amount"
+          },
+          {
+            "code": "antenatal_amount",
+            "display": "antenatal_amount"
+          },
+          {
+            "code": "hospital_deduction",
+            "display": "hospital_deduction"
+          },
+          {
+            "code": "non_hospital_deduction",
+            "display": "non_hospital_deduction"
+          },
+          {
+            "code": "hospital_ceiling",
+            "display": "hospital_ceiling"
+          },
+          {
+            "code": "non_hospital_ceiling",
+            "display": "non_hospital_ceiling"
+          }
+        ]
+      }
+    ]
+  }
+}

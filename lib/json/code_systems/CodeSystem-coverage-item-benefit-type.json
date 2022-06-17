@@ -1,0 +1,117 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "coverage-item-benefit-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/coverage-item-benefit-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">admissions_left<a name=\"coverage-item-benefit-type-admissions_left\"> </a></td><td>total_admissions</td></tr><tr><td style=\"white-space:nowrap\">visits_left<a name=\"coverage-item-benefit-type-visits_left\"> </a></td><td>total_visits</td></tr><tr><td style=\"white-space:nowrap\">consultations_left<a name=\"coverage-item-benefit-type-consultations_left\"> </a></td><td>total_consultations</td></tr><tr><td style=\"white-space:nowrap\">surgeries_left<a name=\"coverage-item-benefit-type-surgeries_left\"> </a></td><td>total_surgeries</td></tr><tr><td style=\"white-space:nowrap\">deliveries_left<a name=\"coverage-item-benefit-type-deliveries_left\"> </a></td><td>total_deliveries</td></tr><tr><td style=\"white-space:nowrap\">antenatal_left<a name=\"coverage-item-benefit-type-antenatal_left\"> </a></td><td>total_antenatal</td></tr><tr><td style=\"white-space:nowrap\">consultation_amount<a name=\"coverage-item-benefit-type-consultation_amount\"> </a></td><td>consultation_amount</td></tr><tr><td style=\"white-space:nowrap\">surgery_amount<a name=\"coverage-item-benefit-type-surgery_amount\"> </a></td><td>surgery_amount</td></tr><tr><td style=\"white-space:nowrap\">delivery_amount<a name=\"coverage-item-benefit-type-delivery_amount\"> </a></td><td>delivery_amount</td></tr><tr><td style=\"white-space:nowrap\">hospitalization_amount<a name=\"coverage-item-benefit-type-hospitalization_amount\"> </a></td><td>hospitalization_amount</td></tr><tr><td style=\"white-space:nowrap\">antenatal_amount<a name=\"coverage-item-benefit-type-antenatal_amount\"> </a></td><td>antenatal_amount</td></tr><tr><td style=\"white-space:nowrap\">total_deduction<a name=\"coverage-item-benefit-type-total_deduction\"> </a></td><td>total_deduction</td></tr><tr><td style=\"white-space:nowrap\">hospital_deduction<a name=\"coverage-item-benefit-type-hospital_deduction\"> </a></td><td>hospital_deduction</td></tr><tr><td style=\"white-space:nowrap\">non_hospital_deduction<a name=\"coverage-item-benefit-type-non_hospital_deduction\"> </a></td><td>non_hospital_deduction</td></tr><tr><td style=\"white-space:nowrap\">total_ceiling<a name=\"coverage-item-benefit-type-total_ceiling\"> </a></td><td>total_ceiling</td></tr><tr><td style=\"white-space:nowrap\">hospital_ceiling<a name=\"coverage-item-benefit-type-hospital_ceiling\"> </a></td><td>hospital_ceiling</td></tr><tr><td style=\"white-space:nowrap\">non_hospital_ceiling<a name=\"coverage-item-benefit-type-non_hospital_ceiling\"> </a></td><td>non_hospital_ceiling</td></tr><tr><td style=\"white-space:nowrap\">item_left<a name=\"coverage-item-benefit-type-item_left\"> </a></td><td>Items left</td></tr><tr><td style=\"white-space:nowrap\">min_date_item<a name=\"coverage-item-benefit-type-min_date_item\"> </a></td><td>Mininum date</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/coverage-item-benefit-type",
+  "version": "0.1.0",
+  "name": "CoverageItemBenefitTypeCS",
+  "title": "Type of benefit (Coverage)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the type of benefit under a Coverage. Values defined by openIMIS. Can not be extended.",
+  "content": "complete",
+  "count": 19,
+  "concept": [
+    {
+      "code": "admissions_left",
+      "display": "total_admissions"
+    },
+    {
+      "code": "visits_left",
+      "display": "total_visits"
+    },
+    {
+      "code": "consultations_left",
+      "display": "total_consultations"
+    },
+    {
+      "code": "surgeries_left",
+      "display": "total_surgeries"
+    },
+    {
+      "code": "deliveries_left",
+      "display": "total_deliveries"
+    },
+    {
+      "code": "antenatal_left",
+      "display": "total_antenatal"
+    },
+    {
+      "code": "consultation_amount",
+      "display": "consultation_amount"
+    },
+    {
+      "code": "surgery_amount",
+      "display": "surgery_amount"
+    },
+    {
+      "code": "delivery_amount",
+      "display": "delivery_amount"
+    },
+    {
+      "code": "hospitalization_amount",
+      "display": "hospitalization_amount"
+    },
+    {
+      "code": "antenatal_amount",
+      "display": "antenatal_amount"
+    },
+    {
+      "code": "total_deduction",
+      "display": "total_deduction"
+    },
+    {
+      "code": "hospital_deduction",
+      "display": "hospital_deduction"
+    },
+    {
+      "code": "non_hospital_deduction",
+      "display": "non_hospital_deduction"
+    },
+    {
+      "code": "total_ceiling",
+      "display": "total_ceiling"
+    },
+    {
+      "code": "hospital_ceiling",
+      "display": "hospital_ceiling"
+    },
+    {
+      "code": "non_hospital_ceiling",
+      "display": "non_hospital_ceiling"
+    },
+    {
+      "code": "item_left",
+      "display": "Items left"
+    },
+    {
+      "code": "min_date_item",
+      "display": "Mininum date"
+    }
+  ]
+}

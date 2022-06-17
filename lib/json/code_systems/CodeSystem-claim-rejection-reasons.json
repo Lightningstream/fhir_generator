@@ -1,0 +1,121 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "claim-rejection-reasons",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/claim-rejection-reasons defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">-1<a name=\"claim-rejection-reasons--1\"> </a></td><td>REJECTED BY MEDICAL OFFICER</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"claim-rejection-reasons-0\"> </a></td><td>ACCEPTED</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"claim-rejection-reasons-1\"> </a></td><td>INVALID ITEM OR SERVICE</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"claim-rejection-reasons-2\"> </a></td><td>NOT IN PRICE LIST</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"claim-rejection-reasons-3\"> </a></td><td>NO PRODUCT FOUND</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"claim-rejection-reasons-4\"> </a></td><td>CATEGORY LIMITATION</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"claim-rejection-reasons-5\"> </a></td><td>FREQUENCY FAILURE</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"claim-rejection-reasons-6\"> </a></td><td>DUPLICATED</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"claim-rejection-reasons-7\"> </a></td><td>FAMILY</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"claim-rejection-reasons-8\"> </a></td><td>DIAGNOSIS NOT IN LIST</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"claim-rejection-reasons-9\"> </a></td><td>TARGET DATE</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"claim-rejection-reasons-10\"> </a></td><td>CARE TYPE</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"claim-rejection-reasons-11\"> </a></td><td>MAX HOSPITAL ADMISSIONS</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"claim-rejection-reasons-12\"> </a></td><td>MAX VISITS</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"claim-rejection-reasons-13\"> </a></td><td>MAX CONSULTATIONS</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"claim-rejection-reasons-14\"> </a></td><td>MAX SURGERIES</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"claim-rejection-reasons-15\"> </a></td><td>MAX DELIVERIES</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"claim-rejection-reasons-16\"> </a></td><td>QTY OVER LIMIT</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"claim-rejection-reasons-17\"> </a></td><td>WAITING PERIOD FAIL</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"claim-rejection-reasons-19\"> </a></td><td>MAX ANTENATAL</td></tr></table></div>"
+  },
+  "url": "https://openimis.github.io/openimis_fhir_r4_ig/CodeSystem/claim-rejection-reasons",
+  "version": "0.1.0",
+  "name": "ClaimRejectionReasonsCS",
+  "title": "Rejection Reasons (Claim)",
+  "status": "active",
+  "date": "2022-05-17T09:34:33+00:00",
+  "publisher": "openIMIS Initiative",
+  "contact": [
+    {
+      "name": "openIMIS Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.openimis.org"
+        }
+      ]
+    },
+    {
+      "name": "Dragos Dobre",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "dragos.dobre@swisstph.ch",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the rejection reason of an item from a Claim. \nValues limited by openIMIS.",
+  "content": "complete",
+  "count": 20,
+  "concept": [
+    {
+      "code": "-1",
+      "display": "REJECTED BY MEDICAL OFFICER"
+    },
+    {
+      "code": "0",
+      "display": "ACCEPTED"
+    },
+    {
+      "code": "1",
+      "display": "INVALID ITEM OR SERVICE"
+    },
+    {
+      "code": "2",
+      "display": "NOT IN PRICE LIST"
+    },
+    {
+      "code": "3",
+      "display": "NO PRODUCT FOUND"
+    },
+    {
+      "code": "4",
+      "display": "CATEGORY LIMITATION"
+    },
+    {
+      "code": "5",
+      "display": "FREQUENCY FAILURE"
+    },
+    {
+      "code": "6",
+      "display": "DUPLICATED"
+    },
+    {
+      "code": "7",
+      "display": "FAMILY"
+    },
+    {
+      "code": "8",
+      "display": "DIAGNOSIS NOT IN LIST"
+    },
+    {
+      "code": "9",
+      "display": "TARGET DATE"
+    },
+    {
+      "code": "10",
+      "display": "CARE TYPE"
+    },
+    {
+      "code": "11",
+      "display": "MAX HOSPITAL ADMISSIONS"
+    },
+    {
+      "code": "12",
+      "display": "MAX VISITS"
+    },
+    {
+      "code": "13",
+      "display": "MAX CONSULTATIONS"
+    },
+    {
+      "code": "14",
+      "display": "MAX SURGERIES"
+    },
+    {
+      "code": "15",
+      "display": "MAX DELIVERIES"
+    },
+    {
+      "code": "16",
+      "display": "QTY OVER LIMIT"
+    },
+    {
+      "code": "17",
+      "display": "WAITING PERIOD FAIL"
+    },
+    {
+      "code": "19",
+      "display": "MAX ANTENATAL"
+    }
+  ]
+}
